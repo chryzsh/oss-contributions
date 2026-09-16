@@ -105,24 +105,48 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 | 2021-01-18 | RedSiege/C2concealer | [#3 Fixed certbot-auto deprecation](https://github.com/RedSiege/C2concealer/pull/3) | ⚪ Closed |
 | 2019-10-23 | seajaysec/cypheroth | [#2 Added support for remote address](https://github.com/seajaysec/cypheroth/pull/2) | ⚪ Closed |
 
-## Original tools (1)
+## Original tools (9)
 
-Repos I wrote from scratch, not forks. Manually maintained.
+Public repos I wrote from scratch, not forks. Auto-detected (`isFork == false`); curate exclusions via `EXCLUDE_ORIGINAL_TOOLS`.
 
 | Tool | Description |
 |------|-------------|
-| [PXEHacker](https://github.com/chryzsh/PXEHacker) | Original repo, not a fork |
+| [docker-cobaltstrike](https://github.com/chryzsh/docker-cobaltstrike) | — |
+| [PXEHacker](https://github.com/chryzsh/PXEHacker) | — |
+| [dataverse-recon](https://github.com/chryzsh/dataverse-recon) | — |
+| [docker-sliver](https://github.com/chryzsh/docker-sliver) | — |
+| [purpleteam](https://github.com/chryzsh/purpleteam) | Files used in purple team testing |
+| [ansible-role-cobalt-strike](https://github.com/chryzsh/ansible-role-cobalt-strike) | Ansible role to install Cobalt Strike and optionally configure as Teamserver |
+| [DarthSidious](https://github.com/chryzsh/DarthSidious) | Building an Active Directory domain and hacking it |
+| [Aggressor-Scripts](https://github.com/chryzsh/Aggressor-Scripts) | Aggressor scripts for Cobalt Strike |
+| [JenkinsPasswordSpray](https://github.com/chryzsh/JenkinsPasswordSpray) | A tool to password spray Jenkins instances |
 
-## Forks extended with own commits (5)
+## Forks extended with own commits (21)
 
-Forks where I added real functionality on top of upstream. Manually maintained.
+Forks with commits on some branch that aren't in an already-tracked PR above. Auto-detected; see CLAUDE.md for the detection logic and `EXTENDED_FORK_NOTES` to override the one-liner.
 
-| Date | Fork | Upstream | My changes |
-|------|------|----------|------------|
-| 2026-08-27 | [sccm-http-looter](https://github.com/chryzsh/sccm-http-looter) | — | NTLM authentication support |
-| 2026-08-27 | [go-cmloot](https://github.com/chryzsh/go-cmloot) | — | Add ACL hunting capabilities to find files you should not have access to |
-| 2026-08-20 | [SCCM-CVE-2026-47301-Remote-Code-Execution-Exploit](https://github.com/chryzsh/SCCM-CVE-2026-47301-Remote-Code-Execution-Exploit) | OmriBaso/SCCM-CVE-2026-47301-Remote-Code-Execution-Exploit | Added chunked upload support (--chunk-size) + Build-Cab.ps1 helper |
-| 2026-03-18 | [hashcat-6.2.6-SCCM](https://github.com/chryzsh/hashcat-6.2.6-SCCM) | The-Viper-One/hashcat-6.2.6-SCCM | Added AES-256 SCCM module (-m 19851) + OpenCL kernel fixes |
-| 2026-03-18 | [PXEThief](https://github.com/chryzsh/PXEThief) | MWR-CyberSec/PXEThief | Added Scapy TFTP client, fixed Windows Firewall bypass/cleanup crash |
+| Date | Fork | Upstream | Branch | My changes |
+|------|------|----------|--------|------------|
+| 2026-09-16 | [RelayInformer](https://github.com/chryzsh/RelayInformer) | zyn3rgy/RelayInformer | `dev` (+5) | Merge http NTLM preflight fixes into dev; Merge smb signing check into dev; Add unauthenticated SMB signing enforcement check |
+| 2026-09-15 | [ADExplorerSnapshot](https://github.com/chryzsh/ADExplorerSnapshot) | c3c/ADExplorerSnapshot | `feature/snapshot-dump-tooling` (+27) | Write dump output beside the snapshot, not in the tool directory; Run the object-based dumps in a single shared pass; Add missing column to computers.txt header |
+| 2026-08-27 | [sccm-http-looter](https://github.com/chryzsh/sccm-http-looter) | badsectorlabs/sccm-http-looter | `fix/https-url-regex` (+2) | NTLM authentication support |
+| 2026-08-27 | [go-cmloot](https://github.com/chryzsh/go-cmloot) | jfjallid/go-cmloot | `feat/acl-hunt` (+2) | Add ACL hunting capabilities to find files you should not have access to |
+| 2026-08-20 | [SCCM-CVE-2026-47301-Remote-Code-Execution-Exploit](https://github.com/chryzsh/SCCM-CVE-2026-47301-Remote-Code-Execution-Exploit) | OmriBaso/SCCM-CVE-2026-47301-Remote-Code-Execution-Exploit | `main` (+1) | Added chunked upload support (--chunk-size) + Build-Cab.ps1 helper |
+| 2026-07-03 | [OperatorsKit](https://github.com/chryzsh/OperatorsKit) | REDMED-X/OperatorsKit | `main` (+1) | Add HRESULT diagnostics to AddTaskScheduler |
+| 2026-07-03 | [cookie-monster](https://github.com/chryzsh/cookie-monster) | KingOfTheNOPs/cookie-monster | `CS-4.12` (+1) | swapped out download_file() for BeaconDownload(), todo: clean up code |
+| 2026-06-01 | [cloudprowl](https://github.com/chryzsh/cloudprowl) | pwnedlabs/cloudprowl | `modular-enumeration` (+3) | privesc: map managed-identity takeover targets to their host resources; privesc: flag owned principals holding privileged ARM roles as CRITICAL; Add modular architecture, token cache, JSON export, and privesc analyzer |
+| 2026-03-30 | [ai-postex](https://github.com/chryzsh/ai-postex) | 0xTriboulet/ai-postex | `main` (+15) | Add improvement plan tracking bug fixes, perf, and new capabilities; Add missing gPostexArgumentsBuffer definition required by Arsenal Kit base; Fix C++/WinRT build errors: add missing Foundation headers and fix zero-size model array |
+| 2026-03-20 | [asciinema](https://github.com/chryzsh/asciinema) | asciinema/asciinema | `python` (+5) | Update bug-report.md; Add "Development" section to the README; Fix image link in the README |
+| 2026-03-18 | [SharpDPAPI](https://github.com/chryzsh/SharpDPAPI) | GhostPack/SharpDPAPI | `chryzsh` (+2) | Add FORK_NOTES.md; Remove null bytes from output strings |
+| 2026-03-18 | [hashcat-6.2.6-SCCM](https://github.com/chryzsh/hashcat-6.2.6-SCCM) | The-Viper-One/hashcat-6.2.6-SCCM | `chryzsh` (+3) | Added AES-256 SCCM module (-m 19851) + OpenCL kernel fixes |
+| 2026-03-18 | [cred1py](https://github.com/chryzsh/cred1py) | SpecterOps/cred1py | `main` (+21) | Add SCCM enhancements, boot.var extraction, and fork documentation; Require README updates for all user-facing changes; Add standalone local .boot.var hash extraction subcommand |
+| 2026-03-18 | [PXEThief](https://github.com/chryzsh/PXEThief) | MWR-CyberSec/PXEThief | `main` (+2) | Added Scapy TFTP client, fixed Windows Firewall bypass/cleanup crash |
+| 2026-03-18 | [smbtakeover](https://github.com/chryzsh/smbtakeover) | zyn3rgy/smbtakeover | `chryzsh` (+7) | Add .gitignore for build artifacts; Add FORK_NOTES.md; Fix BOF bugs in smbtakeover |
+| 2026-03-18 | [DPAPI_BOF](https://github.com/chryzsh/DPAPI_BOF) | Bhanunamikaze/DPAPI_BOF | `chryzsh` (+6) | Add FORK_NOTES.md; Add SCCM RECON-7 BOF; Document fork-specific SCCM BOF coverage |
+| 2026-03-18 | [PassTheCert](https://github.com/chryzsh/PassTheCert) | AlmondOffSec/PassTheCert | `chryzsh` (+3) | Add FORK_NOTES.md and app.config; Add .gitignore for build artifacts; Fix certificate loading, add private key validation, improve error messages |
+| 2026-03-18 | [Seatbelt](https://github.com/chryzsh/Seatbelt) | GhostPack/Seatbelt | `chryzsh` (+2) | Add FORK_NOTES.md; Fix remote WMI auth: add PacketPrivacy and fix implicit credential handling |
+| 2025-04-02 | [SQLRecon](https://github.com/chryzsh/SQLRecon) | skahwah/SQLRecon | `dev` (+1) | Modified CLR assembly to load the dll way way faster |
+| 2024-11-18 | [linux_bof](https://github.com/chryzsh/linux_bof) | outflanknl/nix_bof_template | `main` (+4) | added uname; added netstat bof; added netstat BOF |
+| 2022-12-19 | [TIBER-Cases](https://github.com/chryzsh/TIBER-Cases) | jstnk9/TIBER-Cases | `main` (+1) | updated for thehive5 |
 
-_Last updated: 2026-09-16 19:06 UTC_
+_Last updated: 2026-09-16 19:20 UTC_
