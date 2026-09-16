@@ -81,11 +81,10 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 | 2025-11-26 | SpecterOps/TierZeroTable | [#11 Add DHCP administrators](https://github.com/SpecterOps/TierZeroTable/pull/11) | 🟣 Merged |
 | 2024-04-23 | xforcered/ADOKit | [#1 Bug fix for whoami command](https://github.com/xforcered/ADOKit/pull/1) | 🟣 Merged |
 
-## Other (14)
+## Media / indexers (9)
 
 | Date | Repo | PR | State |
 |------|------|-----|-------|
-| 2026-09-16 | praetorian-inc/Sulla | [#18 Add file creation and last-write timestamps to findings](https://github.com/praetorian-inc/Sulla/pull/18) | 🟢 Open |
 | 2021-08-13 | Prowlarr/Prowlarr | [#418 Fixed: (Indexer) PTP IMDB search](https://github.com/Prowlarr/Prowlarr/pull/418) | 🟣 Merged |
 | 2021-08-03 | Radarr/Radarr | [#6522 New Language: Chinese (Cantonese) & Chinese (Mandarin) - Lang 35 & 38](https://github.com/Radarr/Radarr/pull/6522) | ⚪ Closed |
 | 2021-08-03 | Prowlarr/Prowlarr | [#390 Fixed: (Indexer) Rutracker - multiple languages support](https://github.com/Prowlarr/Prowlarr/pull/390) | ⚪ Closed |
@@ -95,9 +94,35 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 | 2021-07-30 | Prowlarr/Prowlarr | [#374 Iptorrents tv episode search fix](https://github.com/Prowlarr/Prowlarr/pull/374) | 🟣 Merged |
 | 2021-07-29 | Prowlarr/Prowlarr | [#372 New: (Indexer) - Secret Cinema](https://github.com/Prowlarr/Prowlarr/pull/372) | 🟣 Merged |
 | 2021-07-29 | Prowlarr/Prowlarr | [#371 New: (Indexer) Rutracker.org](https://github.com/Prowlarr/Prowlarr/pull/371) | 🟣 Merged |
+
+## Other (5)
+
+| Date | Repo | PR | State |
+|------|------|-----|-------|
+| 2026-09-16 | praetorian-inc/Sulla | [#18 Add file creation and last-write timestamps to findings](https://github.com/praetorian-inc/Sulla/pull/18) | 🟢 Open |
 | 2021-05-24 | ultrarunningdiscord/stravadiscordbot | [#30 fix vert and sorting](https://github.com/ultrarunningdiscord/stravadiscordbot/pull/30) | 🟣 Merged |
 | 2021-05-24 | ultrarunningdiscord/stravadiscordbot | [#29 a simple test of vert leaderboard](https://github.com/ultrarunningdiscord/stravadiscordbot/pull/29) | 🟣 Merged |
 | 2021-01-18 | RedSiege/C2concealer | [#3 Fixed certbot-auto deprecation](https://github.com/RedSiege/C2concealer/pull/3) | ⚪ Closed |
 | 2019-10-23 | seajaysec/cypheroth | [#2 Added support for remote address](https://github.com/seajaysec/cypheroth/pull/2) | ⚪ Closed |
 
-_Last updated: 2026-09-16 19:03 UTC_
+## Original tools (1)
+
+Repos I wrote from scratch, not forks. Manually maintained.
+
+| Tool | Description |
+|------|-------------|
+| [PXEHacker](https://github.com/chryzsh/PXEHacker) | Original repo, not a fork |
+
+## Forks extended with own commits (5)
+
+Forks where I added real functionality on top of upstream. Manually maintained.
+
+| Date | Fork | Upstream | My changes |
+|------|------|----------|------------|
+| 2026-08-27 | [sccm-http-looter](https://github.com/chryzsh/sccm-http-looter) | — | NTLM authentication support |
+| 2026-08-27 | [go-cmloot](https://github.com/chryzsh/go-cmloot) | — | Add ACL hunting capabilities to find files you should not have access to |
+| 2026-08-20 | [SCCM-CVE-2026-47301-Remote-Code-Execution-Exploit](https://github.com/chryzsh/SCCM-CVE-2026-47301-Remote-Code-Execution-Exploit) | OmriBaso/SCCM-CVE-2026-47301-Remote-Code-Execution-Exploit | Added chunked upload support (--chunk-size) + Build-Cab.ps1 helper |
+| 2026-03-18 | [hashcat-6.2.6-SCCM](https://github.com/chryzsh/hashcat-6.2.6-SCCM) | The-Viper-One/hashcat-6.2.6-SCCM | Added AES-256 SCCM module (-m 19851) + OpenCL kernel fixes |
+| 2026-03-18 | [PXEThief](https://github.com/chryzsh/PXEThief) | MWR-CyberSec/PXEThief | Added Scapy TFTP client, fixed Windows Firewall bypass/cleanup crash |
+
+_Last updated: 2026-09-16 19:06 UTC_

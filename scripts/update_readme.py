@@ -26,10 +26,59 @@ CATEGORY_RULES = [
     ("tierzerotable", "AD / BloodHound"),
     ("mssqlhound", "AD / BloodHound"),
     ("adokit", "AD / BloodHound"),
+    ("prowlarr", "Media / indexers"),
+    ("radarr", "Media / indexers"),
 ]
 DEFAULT_CATEGORY = "Other"
 
 STATE_ICON = {"OPEN": "🟢 Open", "MERGED": "🟣 Merged", "CLOSED": "⚪ Closed"}
+
+# Manually maintained — not derivable from `gh search`. Edit by hand when adding one.
+ORIGINAL_TOOLS = [
+    {
+        "name": "PXEHacker",
+        "url": "https://github.com/chryzsh/PXEHacker",
+        "description": "Original repo, not a fork",
+    },
+]
+
+EXTENDED_FORKS = [
+    {
+        "date": "2026-08-27",
+        "fork": "sccm-http-looter",
+        "url": "https://github.com/chryzsh/sccm-http-looter",
+        "upstream": "",
+        "changes": "NTLM authentication support",
+    },
+    {
+        "date": "2026-08-27",
+        "fork": "go-cmloot",
+        "url": "https://github.com/chryzsh/go-cmloot",
+        "upstream": "",
+        "changes": "Add ACL hunting capabilities to find files you should not have access to",
+    },
+    {
+        "date": "2026-08-20",
+        "fork": "SCCM-CVE-2026-47301-Remote-Code-Execution-Exploit",
+        "url": "https://github.com/chryzsh/SCCM-CVE-2026-47301-Remote-Code-Execution-Exploit",
+        "upstream": "OmriBaso/SCCM-CVE-2026-47301-Remote-Code-Execution-Exploit",
+        "changes": "Added chunked upload support (--chunk-size) + Build-Cab.ps1 helper",
+    },
+    {
+        "date": "2026-03-18",
+        "fork": "hashcat-6.2.6-SCCM",
+        "url": "https://github.com/chryzsh/hashcat-6.2.6-SCCM",
+        "upstream": "The-Viper-One/hashcat-6.2.6-SCCM",
+        "changes": "Added AES-256 SCCM module (-m 19851) + OpenCL kernel fixes",
+    },
+    {
+        "date": "2026-03-18",
+        "fork": "PXEThief",
+        "url": "https://github.com/chryzsh/PXEThief",
+        "upstream": "MWR-CyberSec/PXEThief",
+        "changes": "Added Scapy TFTP client, fixed Windows Firewall bypass/cleanup crash",
+    },
+]
 
 
 def run_gh_search() -> list[dict]:
@@ -83,8 +132,10 @@ def build_readme(prs: list[dict]) -> str:
         "",
     ]
 
-    category_order = [c for _, c in CATEGORY_RULES if c not in {"SCCM / ConfigMgr", "BOF / C2 tooling", "AD / BloodHound"}]
-    ordered_categories = ["SCCM / ConfigMgr", "BOF / C2 tooling", "AD / BloodHound", DEFAULT_CATEGORY]
+    ordered_categories = [
+        "SCCM / ConfigMgr", "BOF / C2 tooling", "AD / BloodHound",
+        "Media / indexers", DEFAULT_CATEGORY,
+    ]
     for category in ordered_categories:
         prs_in_cat = by_category.get(category)
         if not prs_in_cat:
@@ -99,6 +150,31 @@ def build_readme(prs: list[dict]) -> str:
             title = pr["title"].replace("|", "\\|")
             state = STATE_ICON.get(pr["state"], pr["state"])
             lines.append(f"| {date} | {repo} | [#{pr['number']} {title}]({pr['url']}) | {state} |")
+        lines.append("")
+
+    if ORIGINAL_TOOLS:
+        lines.append(f"## Original tools ({len(ORIGINAL_TOOLS)})")
+        lines.append("")
+        lines.append("Repos I wrote from scratch, not forks. Manually maintained.")
+        lines.append("")
+        lines.append("| Tool | Description |")
+        lines.append("|------|-------------|")
+        for tool in ORIGINAL_TOOLS:
+            lines.append(f"| [{tool['name']}]({tool['url']}) | {tool['description']} |")
+        lines.append("")
+
+    if EXTENDED_FORKS:
+        lines.append(f"## Forks extended with own commits ({len(EXTENDED_FORKS)})")
+        lines.append("")
+        lines.append("Forks where I added real functionality on top of upstream. Manually maintained.")
+        lines.append("")
+        lines.append("| Date | Fork | Upstream | My changes |")
+        lines.append("|------|------|----------|------------|")
+        for fork in EXTENDED_FORKS:
+            upstream = fork["upstream"] or "—"
+            lines.append(
+                f"| {fork['date']} | [{fork['fork']}]({fork['url']}) | {upstream} | {fork['changes']} |"
+            )
         lines.append("")
 
     generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
