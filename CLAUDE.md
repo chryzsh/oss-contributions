@@ -54,23 +54,46 @@ is wrong in both directions:
   `sccm-http-looter` and `go-cmloot` both showed 0 commits ahead on `main`,
   the actual work was on `fix/https-url-regex` and `feat/acl-hunt`. Any
   detection has to check *every* branch on the fork, not just the default one.
-- **False positives**: once a PR from a fork branch gets merged upstream
-  (especially squash-merged), the fork's branch still compares as N commits
-  ahead of upstream forever, because squash-merge rewrites commit hashes —
-  the content landed, but the SHAs never will match. `toastnotify-bof`,
+- **False positives (merged PRs)**: once a PR from a fork branch gets merged
+  upstream (especially squash-merged), the fork's branch still compares as N
+  commits ahead of upstream forever, because squash-merge rewrites commit
+  hashes — the content landed, but the SHAs never will match. `toastnotify-bof`,
   `bofhound`, and `sccmhunter` all showed nonzero `ahead_by` purely from
   this artifact, despite being fully represented already in the PR table.
+- **False positives (mirrored upstream branches)**: a fork's branch can be
+  100% the *upstream maintainer's own* commits, not mine, if the branch was
+  copied in at fork time or synced later without ever being touched.
+  `cookie-monster`'s `CS-4.12` branch and `asciinema`'s `python` branch both
+  turned out to be entirely the real maintainer's (`KingOfTheNOPs`, `ku1ik`)
+  own work, just sitting on a same-named branch in my fork. Raw `ahead_by`
+  can't distinguish this from real personal work; only the resolved commit
+  author can. Both forks *did* also have a genuinely-mine branch elsewhere
+  (`main` for cookie-monster, `chryzsh` for asciinema) that only surfaced
+  once the fake branch's commits were filtered out — don't assume "this
+  fork looked like a false positive" means "exclude the whole fork," it
+  might mean "check other branches too."
 
-Fix for both: `find_extended_forks()` in the script:
+Fix for all three: `find_extended_forks()` in the script:
 1. Lists every branch on the fork (`gh api repos/chryzsh/<repo>/branches`,
    **not** `--jq '.[].name'` piped through JSON parsing — that returns plain
    lines, not a JSON array, and silently failed under the shared
    `gh_json_soft` JSON-decode-or-default helper. Use a dedicated
    `branch_names()` that reads the raw output).
 2. For each branch, compares it against the *upstream's* default branch via
-   `gh api repos/<upstream>/compare/<upstream-default>...chryzsh:<repo>:<branch>`
-   and takes the branch with the highest `ahead_by`.
-3. Skips the whole fork if its upstream already appears anywhere in the PR
+   `gh api repos/<upstream>/compare/<upstream-default>...chryzsh:<repo>:<branch>`.
+3. Filters that branch's commits through `is_own_commit()`, which keeps a
+   commit only if GitHub's *resolved* author (`.author.login` in the compare
+   response, not the raw git `commit.author.name`) is either `chryzsh` or
+   unresolvable (`.author` is null, or GitHub's literal placeholder login
+   `"invalid-email-address"` for a commit with unconfigured/malformed git
+   identity, e.g. `linux_bof`'s commits all say author name "Your Name").
+   Unresolvable is treated as "mine" because nobody but chryzsh can push to
+   chryzsh's own fork, so it can't be someone *else's* authored work even
+   though GitHub can't identify whose. A real resolved login that isn't
+   `chryzsh` (like `KingOfTheNOPs` or `ku1ik`) means the branch is upstream
+   content, not mine, filtered out entirely.
+4. Takes whichever branch has the most surviving (own) commits.
+5. Skips the whole fork if its upstream already appears anywhere in the PR
    table (built from the same `gh search prs` results as section 1). That
    PR is the tracked record of that contribution; this section is for work
    that never made it into a PR.
@@ -90,6 +113,18 @@ showcase here. There's no automatic way to tell "day job" from "OSS side
 project" apart, so add these by hand as they turn up. If categorization
 looks off after a run (a fork that shouldn't be there, or one that's
 missing), check here first before assuming the detection logic broke.
+
+### PR table rendering: raw HTML, not markdown tables
+
+`render_pr_table()` emits an actual `<table>` with `rowspan` on the Repo
+column instead of a `| Date | Repo | PR | State |` markdown table, so a repo
+with many PRs (e.g. `sccmhunter`) shows its name/link once instead of once
+per row. Plain GFM pipe tables have no rowspan/colspan syntax; GitHub renders
+raw HTML embedded in a README fine, so this table (and only this one) is
+built as HTML strings instead of markdown. Repo names are also links now
+(`https://github.com/<owner>/<repo>`), whereas before they were plain text.
+Escape with `html.escape()`, not markdown's `\|` pipe-escaping, since this is
+HTML now — a PR title containing `<`/`>`/`&` would otherwise break the row.
 
 ### 4. Freshness
 
@@ -113,6 +148,11 @@ check the Action logs.
   API call by hand before assuming the script is broken.
 - **The auto-generated "changes" one-liner is bad** → add an entry to
   `EXTENDED_FORK_NOTES`.
+- **A fork's "changes" describe work that doesn't sound like mine** → check
+  `is_own_commit()` isn't misfiring; also check whether a *different* branch
+  on that same fork has the real content (see the cookie-monster/asciinema
+  case above — the wrong branch can outrank the right one until the wrong
+  one's commits get filtered out).
 - **Rate limits** — a full run makes roughly 1 call per fork for branches,
   plus 1 compare call per branch on every non-PR-tracked fork (roughly 80-120
   REST calls total as of writing). Comfortably under the Actions
