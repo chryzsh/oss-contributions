@@ -3,107 +3,444 @@
 Pull requests to other people's repos. Excludes PRs to my own repos.
 Regenerated automatically from `gh search prs --author=chryzsh`.
 
-**75 total** across **22 repos** — 30 merged, 34 open, 11 closed.
+**75 total** across **22 repos** — 32 merged, 32 open, 11 closed.
 
 ## SCCM / ConfigMgr (39)
 
-| Date | Repo | PR | State |
-|------|------|-----|-------|
-| 2026-09-16 | subat0mik/Misconfiguration-Manager | [#60 Link ELEVATE-2 and PREVENT-14 as associated offensive/defensive IDs](https://github.com/subat0mik/Misconfiguration-Manager/pull/60) | 🟣 Merged |
-| 2026-09-16 | SpecterOps/ConfigManBearPig | [#14 fix: only count ACEs that actually grant Full Control on System Manag…](https://github.com/SpecterOps/ConfigManBearPig/pull/14) | 🟢 Open |
-| 2026-09-16 | garrettfoster13/sccmhunter | [#139 fix: don't treat scoped ACEs on System Management as Full Control](https://github.com/garrettfoster13/sccmhunter/pull/139) | 🟢 Open |
-| 2026-09-08 | Mayyhem/ludus_sccm | [#6 Add opt-in Script Approvers RBAC for NAA (EXEC-2 lab path)](https://github.com/Mayyhem/ludus_sccm/pull/6) | 🟢 Open |
-| 2026-09-08 | Mayyhem/ludus_sccm | [#5 Add create_dp_loot_share role to make CRED-6 possible in the lab](https://github.com/Mayyhem/ludus_sccm/pull/5) | 🟢 Open |
-| 2026-09-08 | SpecterOps/ConfigManBearPig | [#12 fix(context): normalize SPN/objectClass to a list before dlt persistence](https://github.com/SpecterOps/ConfigManBearPig/pull/12) | 🟢 Open |
-| 2026-09-08 | SpecterOps/ConfigManBearPig | [#11 fix(http): stop trusting ambient system/environment proxy config](https://github.com/SpecterOps/ConfigManBearPig/pull/11) | 🟢 Open |
-| 2026-09-08 | SpecterOps/ConfigManBearPig | [#10 fix(local): gate client-log scrape on the same SCCM-client check as WMI](https://github.com/SpecterOps/ConfigManBearPig/pull/10) | 🟢 Open |
-| 2026-09-05 | Mayyhem/ludus_sccm | [#4 Add create_demo_users role for low-priv RDP demo access](https://github.com/Mayyhem/ludus_sccm/pull/4) | 🟢 Open |
-| 2026-09-02 | garrettfoster13/sccmhunter | [#137 fix: smb_hunter can crash the entire scan if a single host profiling fails](https://github.com/garrettfoster13/sccmhunter/pull/137) | 🟢 Open |
-| 2026-09-01 | garrettfoster13/sccmhunter | [#136 fix: relay attack terminates prematurely and crashes on every attempt](https://github.com/garrettfoster13/sccmhunter/pull/136) | 🟢 Open |
-| 2026-09-01 | garrettfoster13/sccmhunter | [#135 fix: require -t, -tu and -ts for relay attack](https://github.com/garrettfoster13/sccmhunter/pull/135) | 🟢 Open |
-| 2026-09-01 | garrettfoster13/sccmhunter | [#134 fix: add missing return statement in do_decrypt_parsers,](https://github.com/garrettfoster13/sccmhunter/pull/134) | 🟢 Open |
-| 2026-09-01 | garrettfoster13/sccmhunter | [#133 Fix/ldap connection handling](https://github.com/garrettfoster13/sccmhunter/pull/133) | 🟢 Open |
-| 2026-08-31 | SpecterOps/ConfigManBearPig | [#9 fix(registry): match hostnames case-insensitively against target_hosts_by_hostname](https://github.com/SpecterOps/ConfigManBearPig/pull/9) | 🟢 Open |
-| 2026-08-28 | subat0mik/Misconfiguration-Manager | [#59 Add SCCMHunter implementation to ELEVATE-2](https://github.com/subat0mik/Misconfiguration-Manager/pull/59) | 🟢 Open |
-| 2026-08-28 | garrettfoster13/sccmhunter | [#132 Fix SCCM client-push registration and DDR framing](https://github.com/garrettfoster13/sccmhunter/pull/132) | 🟢 Open |
-| 2026-08-28 | garrettfoster13/sccmhunter | [#131 fix: pass hostname string, not raw Entry, for resolved computer membe…](https://github.com/garrettfoster13/sccmhunter/pull/131) | 🟢 Open |
-| 2026-08-28 | garrettfoster13/sccmhunter | [#130 fix: stop crashing on NETBIOS timeout during SMB profiling (#106)](https://github.com/garrettfoster13/sccmhunter/pull/130) | ⚪ Closed |
-| 2026-08-28 | garrettfoster13/sccmhunter | [#129 fix: use Cmd2ArgumentParser so the shell works on cmd2 >=4.0 (#124)](https://github.com/garrettfoster13/sccmhunter/pull/129) | 🟢 Open |
-| 2026-08-28 | garrettfoster13/sccmhunter | [#128 fix: remove stray debug print(body) in sessionhunter's do_request](https://github.com/garrettfoster13/sccmhunter/pull/128) | 🟢 Open |
-| 2026-08-28 | garrettfoster13/sccmhunter | [#127 fix: decrypt policy on modern SCCM (RSA-OAEP/AES-CBC)](https://github.com/garrettfoster13/sccmhunter/pull/127) | 🟢 Open |
-| 2026-08-28 | Mayyhem/ludus_sccm | [#3 Add takeover_9_setup role — deliberate TAKEOVER-9 misconfiguration](https://github.com/Mayyhem/ludus_sccm/pull/3) | 🟢 Open |
-| 2026-08-28 | subat0mik/Misconfiguration-Manager | [#58 Document task sequence credential variables beyond the NAA in CRED-1..4](https://github.com/subat0mik/Misconfiguration-Manager/pull/58) | 🟢 Open |
-| 2026-08-28 | subat0mik/Misconfiguration-Manager | [#57 Flesh out TAKEOVER-9 with a full description](https://github.com/subat0mik/Misconfiguration-Manager/pull/57) | 🟢 Open |
-| 2026-08-28 | subat0mik/Misconfiguration-Manager | [#56 Adding CRED-9 - deobfuscation of credentials stored in SCCM machine variables](https://github.com/subat0mik/Misconfiguration-Manager/pull/56) | 🟢 Open |
-| 2026-08-28 | Mayyhem/SharpSCCM | [#65 Use EnumerateDirectories in local triage cache walk](https://github.com/Mayyhem/SharpSCCM/pull/65) | 🟢 Open |
-| 2026-08-28 | subat0mik/Misconfiguration-Manager | [#55 Resync attack/defense matrix with technique write-ups](https://github.com/subat0mik/Misconfiguration-Manager/pull/55) | 🟢 Open |
-| 2026-08-28 | subat0mik/Misconfiguration-Manager | [#54 Restructure RESOURCES.md into categorized tables](https://github.com/subat0mik/Misconfiguration-Manager/pull/54) | 🟢 Open |
-| 2026-08-27 | Mayyhem/SharpSCCM | [#64 Add get policies command](https://github.com/Mayyhem/SharpSCCM/pull/64) | 🟢 Open |
-| 2026-08-21 | Mayyhem/ludus_sccm | [#2 Various Ansible fixes and added ESC8](https://github.com/Mayyhem/ludus_sccm/pull/2) | 🟢 Open |
-| 2026-05-07 | garrettfoster13/sccmhunter | [#122 Fix SHELL.__init__ missing accache parameter](https://github.com/garrettfoster13/sccmhunter/pull/122) | ⚪ Closed |
-| 2026-03-24 | garrettfoster13/sccmhunter | [#116 Feature/kerberos approver auth](https://github.com/garrettfoster13/sccmhunter/pull/116) | 🟣 Merged |
-| 2026-03-23 | Mayyhem/SharpSCCM | [#63 Use UTC for application assignment deadlines](https://github.com/Mayyhem/SharpSCCM/pull/63) | 🟣 Merged |
-| 2026-03-22 | subat0mik/Misconfiguration-Manager | [#51 Expand CRED-6 to cover credential exposure on other site server shares](https://github.com/subat0mik/Misconfiguration-Manager/pull/51) | 🟣 Merged |
-| 2026-03-22 | garrettfoster13/sccmhunter | [#115 Fix approver credential check failing with Kerberos auth](https://github.com/garrettfoster13/sccmhunter/pull/115) | 🟣 Merged |
-| 2026-03-09 | garrettfoster13/sccmhunter | [#110 fix: addcomputer exit after failing to create machine account](https://github.com/garrettfoster13/sccmhunter/pull/110) | 🟣 Merged |
-| 2026-03-09 | garrettfoster13/sccmhunter | [#109 fix: autopwn to convert computer hash to NTLM password format](https://github.com/garrettfoster13/sccmhunter/pull/109) | 🟣 Merged |
-| 2026-03-08 | garrettfoster13/sccmhunter | [#108 fix: make add_admin use SMS00UNA instead of SMS00ALL when adding users to admin](https://github.com/garrettfoster13/sccmhunter/pull/108) | 🟣 Merged |
+<table>
+<thead><tr><th>Date</th><th>Repo</th><th>PR</th><th>State</th></tr></thead>
+<tbody>
+<tr>
+<td>2026-09-16</td>
+<td rowspan="8"><a href="https://github.com/subat0mik/Misconfiguration-Manager">subat0mik/Misconfiguration-Manager</a></td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/60">#60 Link ELEVATE-2 and PREVENT-14 as associated offensive/defensive IDs</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/59">#59 Add SCCMHunter implementation to ELEVATE-2</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/58">#58 Document task sequence credential variables beyond the NAA in CRED-1..4</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/57">#57 Flesh out TAKEOVER-9 with a full description</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/56">#56 Adding CRED-9 - deobfuscation of credentials stored in SCCM machine variables</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/55">#55 Resync attack/defense matrix with technique write-ups</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/54">#54 Restructure RESOURCES.md into categorized tables</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-03-22</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/51">#51 Expand CRED-6 to cover credential exposure on other site server shares</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-09-16</td>
+<td rowspan="5"><a href="https://github.com/SpecterOps/ConfigManBearPig">SpecterOps/ConfigManBearPig</a></td>
+<td><a href="https://github.com/SpecterOps/ConfigManBearPig/pull/14">#14 fix: only count ACEs that actually grant Full Control on System Manag…</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-09-08</td>
+<td><a href="https://github.com/SpecterOps/ConfigManBearPig/pull/12">#12 fix(context): normalize SPN/objectClass to a list before dlt persistence</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-09-08</td>
+<td><a href="https://github.com/SpecterOps/ConfigManBearPig/pull/11">#11 fix(http): stop trusting ambient system/environment proxy config</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-09-08</td>
+<td><a href="https://github.com/SpecterOps/ConfigManBearPig/pull/10">#10 fix(local): gate client-log scrape on the same SCCM-client check as WMI</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-31</td>
+<td><a href="https://github.com/SpecterOps/ConfigManBearPig/pull/9">#9 fix(registry): match hostnames case-insensitively against target_hosts_by_hostname</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-09-16</td>
+<td rowspan="18"><a href="https://github.com/garrettfoster13/sccmhunter">garrettfoster13/sccmhunter</a></td>
+<td><a href="https://github.com/garrettfoster13/sccmhunter/pull/139">#139 fix: don&#x27;t treat scoped ACEs on System Management as Full Control</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-09-02</td>
+<td><a href="https://github.com/garrettfoster13/sccmhunter/pull/137">#137 fix: smb_hunter can crash the entire scan if a single host profiling fails</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-09-01</td>
+<td><a href="https://github.com/garrettfoster13/sccmhunter/pull/136">#136 fix: relay attack terminates prematurely and crashes on every attempt</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-09-01</td>
+<td><a href="https://github.com/garrettfoster13/sccmhunter/pull/135">#135 fix: require -t, -tu and -ts for relay attack</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-09-01</td>
+<td><a href="https://github.com/garrettfoster13/sccmhunter/pull/134">#134 fix: add missing return statement in do_decrypt_parsers,</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-09-01</td>
+<td><a href="https://github.com/garrettfoster13/sccmhunter/pull/133">#133 Fix/ldap connection handling</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/garrettfoster13/sccmhunter/pull/132">#132 Fix SCCM client-push registration and DDR framing</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/garrettfoster13/sccmhunter/pull/131">#131 fix: pass hostname string, not raw Entry, for resolved computer membe…</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/garrettfoster13/sccmhunter/pull/130">#130 fix: stop crashing on NETBIOS timeout during SMB profiling (#106)</a></td>
+<td>⚪ Closed</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/garrettfoster13/sccmhunter/pull/129">#129 fix: use Cmd2ArgumentParser so the shell works on cmd2 &gt;=4.0 (#124)</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/garrettfoster13/sccmhunter/pull/128">#128 fix: remove stray debug print(body) in sessionhunter&#x27;s do_request</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/garrettfoster13/sccmhunter/pull/127">#127 fix: decrypt policy on modern SCCM (RSA-OAEP/AES-CBC)</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-05-07</td>
+<td><a href="https://github.com/garrettfoster13/sccmhunter/pull/122">#122 Fix SHELL.__init__ missing accache parameter</a></td>
+<td>⚪ Closed</td>
+</tr>
+<tr>
+<td>2026-03-24</td>
+<td><a href="https://github.com/garrettfoster13/sccmhunter/pull/116">#116 Feature/kerberos approver auth</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-03-22</td>
+<td><a href="https://github.com/garrettfoster13/sccmhunter/pull/115">#115 Fix approver credential check failing with Kerberos auth</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-03-09</td>
+<td><a href="https://github.com/garrettfoster13/sccmhunter/pull/110">#110 fix: addcomputer exit after failing to create machine account</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-03-09</td>
+<td><a href="https://github.com/garrettfoster13/sccmhunter/pull/109">#109 fix: autopwn to convert computer hash to NTLM password format</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-03-08</td>
+<td><a href="https://github.com/garrettfoster13/sccmhunter/pull/108">#108 fix: make add_admin use SMS00UNA instead of SMS00ALL when adding users to admin</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-09-08</td>
+<td rowspan="5"><a href="https://github.com/Mayyhem/ludus_sccm">Mayyhem/ludus_sccm</a></td>
+<td><a href="https://github.com/Mayyhem/ludus_sccm/pull/6">#6 Add opt-in Script Approvers RBAC for NAA (EXEC-2 lab path)</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-09-08</td>
+<td><a href="https://github.com/Mayyhem/ludus_sccm/pull/5">#5 Add create_dp_loot_share role to make CRED-6 possible in the lab</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-09-05</td>
+<td><a href="https://github.com/Mayyhem/ludus_sccm/pull/4">#4 Add create_demo_users role for low-priv RDP demo access</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/Mayyhem/ludus_sccm/pull/3">#3 Add takeover_9_setup role — deliberate TAKEOVER-9 misconfiguration</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-21</td>
+<td><a href="https://github.com/Mayyhem/ludus_sccm/pull/2">#2 Various Ansible fixes and added ESC8</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td rowspan="3"><a href="https://github.com/Mayyhem/SharpSCCM">Mayyhem/SharpSCCM</a></td>
+<td><a href="https://github.com/Mayyhem/SharpSCCM/pull/65">#65 Use EnumerateDirectories in local triage cache walk</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-27</td>
+<td><a href="https://github.com/Mayyhem/SharpSCCM/pull/64">#64 Add get policies command</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-03-23</td>
+<td><a href="https://github.com/Mayyhem/SharpSCCM/pull/63">#63 Use UTC for application assignment deadlines</a></td>
+<td>🟣 Merged</td>
+</tr>
+</tbody>
+</table>
 
 ## BOF / C2 tooling (14)
 
-| Date | Repo | PR | State |
-|------|------|-----|-------|
-| 2026-03-20 | brmkit/toastnotify-bof | [#1 OC2 compatibility fixes + CNA/OC2 scripts](https://github.com/brmkit/toastnotify-bof/pull/1) | 🟣 Merged |
-| 2026-03-08 | coffeegist/bofhound | [#56 Fix TrustDirection/TrustType enum crash with newer bloodhound.py](https://github.com/coffeegist/bofhound/pull/56) | 🟣 Merged |
-| 2026-02-26 | outflanknl/C2-Tool-Collection | [#6 Fix Kerberoast BOF crash on wildcard filters and output truncation](https://github.com/outflanknl/C2-Tool-Collection/pull/6) | 🟢 Open |
-| 2026-02-10 | trustedsec/CS-Situational-Awareness-BOF | [#151 whoami: Fix various error handling and cleanup issues](https://github.com/trustedsec/CS-Situational-Awareness-BOF/pull/151) | 🟣 Merged |
-| 2026-02-10 | trustedsec/CS-Remote-OPs-BOF | [#62 enableuser: Input validation and double semicolons fix](https://github.com/trustedsec/CS-Remote-OPs-BOF/pull/62) | ⚪ Closed |
-| 2026-02-10 | trustedsec/CS-Remote-OPs-BOF | [#61 reg_set: Fix bug in cleanup/free](https://github.com/trustedsec/CS-Remote-OPs-BOF/pull/61) | 🟣 Merged |
-| 2026-02-10 | trustedsec/CS-Remote-OPs-BOF | [#60 make_token_cert: Fix handle cleanup and NULL check](https://github.com/trustedsec/CS-Remote-OPs-BOF/pull/60) | 🟣 Merged |
-| 2026-02-10 | trustedsec/CS-Remote-OPs-BOF | [#59 ghost_task: Fix time/day variable collision when parsing args](https://github.com/trustedsec/CS-Remote-OPs-BOF/pull/59) | 🟣 Merged |
-| 2026-02-10 | trustedsec/CS-Remote-OPs-BOF | [#58 adduser: Null checks and input validation fix](https://github.com/trustedsec/CS-Remote-OPs-BOF/pull/58) | ⚪ Closed |
-| 2026-02-09 | trustedsec/CS-Remote-OPs-BOF | [#57 addusertogroup: Fix various cleanup/safety and allocation issues ](https://github.com/trustedsec/CS-Remote-OPs-BOF/pull/57) | 🟣 Merged |
-| 2026-01-22 | NetSPI/BOF-PE | [#2 Fix standalone arg parsing for directory paths](https://github.com/NetSPI/BOF-PE/pull/2) | 🟣 Merged |
-| 2025-10-01 | trustedsec/CS-Situational-Awareness-BOF | [#142 Added LDAP signing and sealing to ldapsearch](https://github.com/trustedsec/CS-Situational-Awareness-BOF/pull/142) | 🟣 Merged |
-| 2025-09-29 | trustedsec/CS-Situational-Awareness-BOF | [#141 Add ldapsecuritycheck BOF](https://github.com/trustedsec/CS-Situational-Awareness-BOF/pull/141) | 🟣 Merged |
-| 2025-09-22 | trustedsec/CS-Situational-Awareness-BOF | [#139 Fixed OOB error](https://github.com/trustedsec/CS-Situational-Awareness-BOF/pull/139) | 🟣 Merged |
+<table>
+<thead><tr><th>Date</th><th>Repo</th><th>PR</th><th>State</th></tr></thead>
+<tbody>
+<tr>
+<td>2026-03-20</td>
+<td rowspan="1"><a href="https://github.com/brmkit/toastnotify-bof">brmkit/toastnotify-bof</a></td>
+<td><a href="https://github.com/brmkit/toastnotify-bof/pull/1">#1 OC2 compatibility fixes + CNA/OC2 scripts</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-03-08</td>
+<td rowspan="1"><a href="https://github.com/coffeegist/bofhound">coffeegist/bofhound</a></td>
+<td><a href="https://github.com/coffeegist/bofhound/pull/56">#56 Fix TrustDirection/TrustType enum crash with newer bloodhound.py</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-02-26</td>
+<td rowspan="1"><a href="https://github.com/outflanknl/C2-Tool-Collection">outflanknl/C2-Tool-Collection</a></td>
+<td><a href="https://github.com/outflanknl/C2-Tool-Collection/pull/6">#6 Fix Kerberoast BOF crash on wildcard filters and output truncation</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-02-10</td>
+<td rowspan="4"><a href="https://github.com/trustedsec/CS-Situational-Awareness-BOF">trustedsec/CS-Situational-Awareness-BOF</a></td>
+<td><a href="https://github.com/trustedsec/CS-Situational-Awareness-BOF/pull/151">#151 whoami: Fix various error handling and cleanup issues</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2025-10-01</td>
+<td><a href="https://github.com/trustedsec/CS-Situational-Awareness-BOF/pull/142">#142 Added LDAP signing and sealing to ldapsearch</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2025-09-29</td>
+<td><a href="https://github.com/trustedsec/CS-Situational-Awareness-BOF/pull/141">#141 Add ldapsecuritycheck BOF</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2025-09-22</td>
+<td><a href="https://github.com/trustedsec/CS-Situational-Awareness-BOF/pull/139">#139 Fixed OOB error</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-02-10</td>
+<td rowspan="6"><a href="https://github.com/trustedsec/CS-Remote-OPs-BOF">trustedsec/CS-Remote-OPs-BOF</a></td>
+<td><a href="https://github.com/trustedsec/CS-Remote-OPs-BOF/pull/62">#62 enableuser: Input validation and double semicolons fix</a></td>
+<td>⚪ Closed</td>
+</tr>
+<tr>
+<td>2026-02-10</td>
+<td><a href="https://github.com/trustedsec/CS-Remote-OPs-BOF/pull/61">#61 reg_set: Fix bug in cleanup/free</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-02-10</td>
+<td><a href="https://github.com/trustedsec/CS-Remote-OPs-BOF/pull/60">#60 make_token_cert: Fix handle cleanup and NULL check</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-02-10</td>
+<td><a href="https://github.com/trustedsec/CS-Remote-OPs-BOF/pull/59">#59 ghost_task: Fix time/day variable collision when parsing args</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-02-10</td>
+<td><a href="https://github.com/trustedsec/CS-Remote-OPs-BOF/pull/58">#58 adduser: Null checks and input validation fix</a></td>
+<td>⚪ Closed</td>
+</tr>
+<tr>
+<td>2026-02-09</td>
+<td><a href="https://github.com/trustedsec/CS-Remote-OPs-BOF/pull/57">#57 addusertogroup: Fix various cleanup/safety and allocation issues </a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-01-22</td>
+<td rowspan="1"><a href="https://github.com/NetSPI/BOF-PE">NetSPI/BOF-PE</a></td>
+<td><a href="https://github.com/NetSPI/BOF-PE/pull/2">#2 Fix standalone arg parsing for directory paths</a></td>
+<td>🟣 Merged</td>
+</tr>
+</tbody>
+</table>
 
 ## AD / BloodHound (8)
 
-| Date | Repo | PR | State |
-|------|------|-----|-------|
-| 2026-09-16 | SpecterOps/MSSQLHound | [#27 Fix IP-address targeting bugs in SID/linked-server resolution](https://github.com/SpecterOps/MSSQLHound/pull/27) | 🟢 Open |
-| 2026-09-05 | SpecterOps/TierZeroTable | [#15 Add Entra Connect components](https://github.com/SpecterOps/TierZeroTable/pull/15) | 🟢 Open |
-| 2026-09-05 | SpecterOps/TierZeroTable | [#14 Add VMWare vSphere related components](https://github.com/SpecterOps/TierZeroTable/pull/14) | 🟢 Open |
-| 2026-05-26 | h4wkst3r/ADOKit | [#8 Fix credsValid to probe a real API endpoint](https://github.com/h4wkst3r/ADOKit/pull/8) | 🟣 Merged |
-| 2026-03-23 | SpecterOps/BloodHoundQueryLibrary | [#51 Add "non-tier-zero shortest path to tier zero" queries](https://github.com/SpecterOps/BloodHoundQueryLibrary/pull/51) | 🟣 Merged |
-| 2026-03-08 | SpecterOps/BloodHoundQueryLibrary | [#49 Add gMSA Cypher queries for BloodHound CE](https://github.com/SpecterOps/BloodHoundQueryLibrary/pull/49) | ⚪ Closed |
-| 2025-11-26 | SpecterOps/TierZeroTable | [#11 Add DHCP administrators](https://github.com/SpecterOps/TierZeroTable/pull/11) | 🟣 Merged |
-| 2024-04-23 | xforcered/ADOKit | [#1 Bug fix for whoami command](https://github.com/xforcered/ADOKit/pull/1) | 🟣 Merged |
+<table>
+<thead><tr><th>Date</th><th>Repo</th><th>PR</th><th>State</th></tr></thead>
+<tbody>
+<tr>
+<td>2026-09-16</td>
+<td rowspan="1"><a href="https://github.com/SpecterOps/MSSQLHound">SpecterOps/MSSQLHound</a></td>
+<td><a href="https://github.com/SpecterOps/MSSQLHound/pull/27">#27 Fix IP-address targeting bugs in SID/linked-server resolution</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-09-05</td>
+<td rowspan="3"><a href="https://github.com/SpecterOps/TierZeroTable">SpecterOps/TierZeroTable</a></td>
+<td><a href="https://github.com/SpecterOps/TierZeroTable/pull/15">#15 Add Entra Connect components</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-09-05</td>
+<td><a href="https://github.com/SpecterOps/TierZeroTable/pull/14">#14 Add VMWare vSphere related components</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2025-11-26</td>
+<td><a href="https://github.com/SpecterOps/TierZeroTable/pull/11">#11 Add DHCP administrators</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-05-26</td>
+<td rowspan="1"><a href="https://github.com/h4wkst3r/ADOKit">h4wkst3r/ADOKit</a></td>
+<td><a href="https://github.com/h4wkst3r/ADOKit/pull/8">#8 Fix credsValid to probe a real API endpoint</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-03-23</td>
+<td rowspan="2"><a href="https://github.com/SpecterOps/BloodHoundQueryLibrary">SpecterOps/BloodHoundQueryLibrary</a></td>
+<td><a href="https://github.com/SpecterOps/BloodHoundQueryLibrary/pull/51">#51 Add &quot;non-tier-zero shortest path to tier zero&quot; queries</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-03-08</td>
+<td><a href="https://github.com/SpecterOps/BloodHoundQueryLibrary/pull/49">#49 Add gMSA Cypher queries for BloodHound CE</a></td>
+<td>⚪ Closed</td>
+</tr>
+<tr>
+<td>2024-04-23</td>
+<td rowspan="1"><a href="https://github.com/xforcered/ADOKit">xforcered/ADOKit</a></td>
+<td><a href="https://github.com/xforcered/ADOKit/pull/1">#1 Bug fix for whoami command</a></td>
+<td>🟣 Merged</td>
+</tr>
+</tbody>
+</table>
 
 ## Media / indexers (9)
 
-| Date | Repo | PR | State |
-|------|------|-----|-------|
-| 2021-08-13 | Prowlarr/Prowlarr | [#418 Fixed: (Indexer) PTP IMDB search](https://github.com/Prowlarr/Prowlarr/pull/418) | 🟣 Merged |
-| 2021-08-03 | Radarr/Radarr | [#6522 New Language: Chinese (Cantonese) & Chinese (Mandarin) - Lang 35 & 38](https://github.com/Radarr/Radarr/pull/6522) | ⚪ Closed |
-| 2021-08-03 | Prowlarr/Prowlarr | [#390 Fixed: (Indexer) Rutracker - multiple languages support](https://github.com/Prowlarr/Prowlarr/pull/390) | ⚪ Closed |
-| 2021-08-03 | Prowlarr/Prowlarr | [#389 Fixed: Gazelle search using full IMDb ID](https://github.com/Prowlarr/Prowlarr/pull/389) | 🟣 Merged |
-| 2021-08-02 | Prowlarr/Prowlarr | [#387 Fixed: (Indexer) Secret Cinema IMDbId search](https://github.com/Prowlarr/Prowlarr/pull/387) | ⚪ Closed |
-| 2021-08-02 | Prowlarr/Prowlarr | [#385 Fix IMDb search for Secret Cinema indexer](https://github.com/Prowlarr/Prowlarr/pull/385) | ⚪ Closed |
-| 2021-07-30 | Prowlarr/Prowlarr | [#374 Iptorrents tv episode search fix](https://github.com/Prowlarr/Prowlarr/pull/374) | 🟣 Merged |
-| 2021-07-29 | Prowlarr/Prowlarr | [#372 New: (Indexer) - Secret Cinema](https://github.com/Prowlarr/Prowlarr/pull/372) | 🟣 Merged |
-| 2021-07-29 | Prowlarr/Prowlarr | [#371 New: (Indexer) Rutracker.org](https://github.com/Prowlarr/Prowlarr/pull/371) | 🟣 Merged |
+<table>
+<thead><tr><th>Date</th><th>Repo</th><th>PR</th><th>State</th></tr></thead>
+<tbody>
+<tr>
+<td>2021-08-13</td>
+<td rowspan="8"><a href="https://github.com/Prowlarr/Prowlarr">Prowlarr/Prowlarr</a></td>
+<td><a href="https://github.com/Prowlarr/Prowlarr/pull/418">#418 Fixed: (Indexer) PTP IMDB search</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2021-08-03</td>
+<td><a href="https://github.com/Prowlarr/Prowlarr/pull/390">#390 Fixed: (Indexer) Rutracker - multiple languages support</a></td>
+<td>⚪ Closed</td>
+</tr>
+<tr>
+<td>2021-08-03</td>
+<td><a href="https://github.com/Prowlarr/Prowlarr/pull/389">#389 Fixed: Gazelle search using full IMDb ID</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2021-08-02</td>
+<td><a href="https://github.com/Prowlarr/Prowlarr/pull/387">#387 Fixed: (Indexer) Secret Cinema IMDbId search</a></td>
+<td>⚪ Closed</td>
+</tr>
+<tr>
+<td>2021-08-02</td>
+<td><a href="https://github.com/Prowlarr/Prowlarr/pull/385">#385 Fix IMDb search for Secret Cinema indexer</a></td>
+<td>⚪ Closed</td>
+</tr>
+<tr>
+<td>2021-07-30</td>
+<td><a href="https://github.com/Prowlarr/Prowlarr/pull/374">#374 Iptorrents tv episode search fix</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2021-07-29</td>
+<td><a href="https://github.com/Prowlarr/Prowlarr/pull/372">#372 New: (Indexer) - Secret Cinema</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2021-07-29</td>
+<td><a href="https://github.com/Prowlarr/Prowlarr/pull/371">#371 New: (Indexer) Rutracker.org</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2021-08-03</td>
+<td rowspan="1"><a href="https://github.com/Radarr/Radarr">Radarr/Radarr</a></td>
+<td><a href="https://github.com/Radarr/Radarr/pull/6522">#6522 New Language: Chinese (Cantonese) &amp; Chinese (Mandarin) - Lang 35 &amp; 38</a></td>
+<td>⚪ Closed</td>
+</tr>
+</tbody>
+</table>
 
 ## Other (5)
 
-| Date | Repo | PR | State |
-|------|------|-----|-------|
-| 2026-09-16 | praetorian-inc/Sulla | [#18 Add file creation and last-write timestamps to findings](https://github.com/praetorian-inc/Sulla/pull/18) | 🟢 Open |
-| 2021-05-24 | ultrarunningdiscord/stravadiscordbot | [#30 fix vert and sorting](https://github.com/ultrarunningdiscord/stravadiscordbot/pull/30) | 🟣 Merged |
-| 2021-05-24 | ultrarunningdiscord/stravadiscordbot | [#29 a simple test of vert leaderboard](https://github.com/ultrarunningdiscord/stravadiscordbot/pull/29) | 🟣 Merged |
-| 2021-01-18 | RedSiege/C2concealer | [#3 Fixed certbot-auto deprecation](https://github.com/RedSiege/C2concealer/pull/3) | ⚪ Closed |
-| 2019-10-23 | seajaysec/cypheroth | [#2 Added support for remote address](https://github.com/seajaysec/cypheroth/pull/2) | ⚪ Closed |
+<table>
+<thead><tr><th>Date</th><th>Repo</th><th>PR</th><th>State</th></tr></thead>
+<tbody>
+<tr>
+<td>2026-09-16</td>
+<td rowspan="1"><a href="https://github.com/praetorian-inc/Sulla">praetorian-inc/Sulla</a></td>
+<td><a href="https://github.com/praetorian-inc/Sulla/pull/18">#18 Add file creation and last-write timestamps to findings</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2021-05-24</td>
+<td rowspan="2"><a href="https://github.com/ultrarunningdiscord/stravadiscordbot">ultrarunningdiscord/stravadiscordbot</a></td>
+<td><a href="https://github.com/ultrarunningdiscord/stravadiscordbot/pull/30">#30 fix vert and sorting</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2021-05-24</td>
+<td><a href="https://github.com/ultrarunningdiscord/stravadiscordbot/pull/29">#29 a simple test of vert leaderboard</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2021-01-18</td>
+<td rowspan="1"><a href="https://github.com/RedSiege/C2concealer">RedSiege/C2concealer</a></td>
+<td><a href="https://github.com/RedSiege/C2concealer/pull/3">#3 Fixed certbot-auto deprecation</a></td>
+<td>⚪ Closed</td>
+</tr>
+<tr>
+<td>2019-10-23</td>
+<td rowspan="1"><a href="https://github.com/seajaysec/cypheroth">seajaysec/cypheroth</a></td>
+<td><a href="https://github.com/seajaysec/cypheroth/pull/2">#2 Added support for remote address</a></td>
+<td>⚪ Closed</td>
+</tr>
+</tbody>
+</table>
 
 ## Original tools (9)
 
@@ -127,26 +464,26 @@ Forks with commits on some branch that aren't in an already-tracked PR above. Au
 
 | Date | Fork | Upstream | Branch | My changes |
 |------|------|----------|--------|------------|
-| 2026-09-16 | [RelayInformer](https://github.com/chryzsh/RelayInformer) | zyn3rgy/RelayInformer | `dev` (+5) | Merge http NTLM preflight fixes into dev; Merge smb signing check into dev; Add unauthenticated SMB signing enforcement check |
-| 2026-09-15 | [ADExplorerSnapshot](https://github.com/chryzsh/ADExplorerSnapshot) | c3c/ADExplorerSnapshot | `feature/snapshot-dump-tooling` (+27) | Write dump output beside the snapshot, not in the tool directory; Run the object-based dumps in a single shared pass; Add missing column to computers.txt header |
-| 2026-08-27 | [sccm-http-looter](https://github.com/chryzsh/sccm-http-looter) | badsectorlabs/sccm-http-looter | `fix/https-url-regex` (+2) | NTLM authentication support |
-| 2026-08-27 | [go-cmloot](https://github.com/chryzsh/go-cmloot) | jfjallid/go-cmloot | `feat/acl-hunt` (+2) | Add ACL hunting capabilities to find files you should not have access to |
-| 2026-08-20 | [SCCM-CVE-2026-47301-Remote-Code-Execution-Exploit](https://github.com/chryzsh/SCCM-CVE-2026-47301-Remote-Code-Execution-Exploit) | OmriBaso/SCCM-CVE-2026-47301-Remote-Code-Execution-Exploit | `main` (+1) | Added chunked upload support (--chunk-size) + Build-Cab.ps1 helper |
-| 2026-07-03 | [OperatorsKit](https://github.com/chryzsh/OperatorsKit) | REDMED-X/OperatorsKit | `main` (+1) | Add HRESULT diagnostics to AddTaskScheduler |
-| 2026-07-03 | [cookie-monster](https://github.com/chryzsh/cookie-monster) | KingOfTheNOPs/cookie-monster | `CS-4.12` (+1) | swapped out download_file() for BeaconDownload(), todo: clean up code |
-| 2026-06-01 | [cloudprowl](https://github.com/chryzsh/cloudprowl) | pwnedlabs/cloudprowl | `modular-enumeration` (+3) | privesc: map managed-identity takeover targets to their host resources; privesc: flag owned principals holding privileged ARM roles as CRITICAL; Add modular architecture, token cache, JSON export, and privesc analyzer |
-| 2026-03-30 | [ai-postex](https://github.com/chryzsh/ai-postex) | 0xTriboulet/ai-postex | `main` (+15) | Add improvement plan tracking bug fixes, perf, and new capabilities; Add missing gPostexArgumentsBuffer definition required by Arsenal Kit base; Fix C++/WinRT build errors: add missing Foundation headers and fix zero-size model array |
-| 2026-03-20 | [asciinema](https://github.com/chryzsh/asciinema) | asciinema/asciinema | `python` (+5) | Update bug-report.md; Add "Development" section to the README; Fix image link in the README |
-| 2026-03-18 | [SharpDPAPI](https://github.com/chryzsh/SharpDPAPI) | GhostPack/SharpDPAPI | `chryzsh` (+2) | Add FORK_NOTES.md; Remove null bytes from output strings |
-| 2026-03-18 | [hashcat-6.2.6-SCCM](https://github.com/chryzsh/hashcat-6.2.6-SCCM) | The-Viper-One/hashcat-6.2.6-SCCM | `chryzsh` (+3) | Added AES-256 SCCM module (-m 19851) + OpenCL kernel fixes |
-| 2026-03-18 | [cred1py](https://github.com/chryzsh/cred1py) | SpecterOps/cred1py | `main` (+21) | Add SCCM enhancements, boot.var extraction, and fork documentation; Require README updates for all user-facing changes; Add standalone local .boot.var hash extraction subcommand |
-| 2026-03-18 | [PXEThief](https://github.com/chryzsh/PXEThief) | MWR-CyberSec/PXEThief | `main` (+2) | Added Scapy TFTP client, fixed Windows Firewall bypass/cleanup crash |
-| 2026-03-18 | [smbtakeover](https://github.com/chryzsh/smbtakeover) | zyn3rgy/smbtakeover | `chryzsh` (+7) | Add .gitignore for build artifacts; Add FORK_NOTES.md; Fix BOF bugs in smbtakeover |
-| 2026-03-18 | [DPAPI_BOF](https://github.com/chryzsh/DPAPI_BOF) | Bhanunamikaze/DPAPI_BOF | `chryzsh` (+6) | Add FORK_NOTES.md; Add SCCM RECON-7 BOF; Document fork-specific SCCM BOF coverage |
-| 2026-03-18 | [PassTheCert](https://github.com/chryzsh/PassTheCert) | AlmondOffSec/PassTheCert | `chryzsh` (+3) | Add FORK_NOTES.md and app.config; Add .gitignore for build artifacts; Fix certificate loading, add private key validation, improve error messages |
-| 2026-03-18 | [Seatbelt](https://github.com/chryzsh/Seatbelt) | GhostPack/Seatbelt | `chryzsh` (+2) | Add FORK_NOTES.md; Fix remote WMI auth: add PacketPrivacy and fix implicit credential handling |
-| 2025-04-02 | [SQLRecon](https://github.com/chryzsh/SQLRecon) | skahwah/SQLRecon | `dev` (+1) | Modified CLR assembly to load the dll way way faster |
-| 2024-11-18 | [linux_bof](https://github.com/chryzsh/linux_bof) | outflanknl/nix_bof_template | `main` (+4) | added uname; added netstat bof; added netstat BOF |
-| 2022-12-19 | [TIBER-Cases](https://github.com/chryzsh/TIBER-Cases) | jstnk9/TIBER-Cases | `main` (+1) | updated for thehive5 |
+| 2026-09-16 | [RelayInformer](https://github.com/chryzsh/RelayInformer) | [zyn3rgy/RelayInformer](https://github.com/zyn3rgy/RelayInformer) | `dev` (+5) | Added an unauthenticated SMB signing enforcement check, plus NTLM preflight fixes for HTTP relay targets |
+| 2026-09-15 | [ADExplorerSnapshot](https://github.com/chryzsh/ADExplorerSnapshot) | [c3c/ADExplorerSnapshot](https://github.com/c3c/ADExplorerSnapshot) | `feature/snapshot-dump-tooling` (+27) | Added dump-output tooling: a single shared pass for object-based dumps, output written beside the snapshot instead of the tool directory, plus a missing header column fix |
+| 2026-08-27 | [sccm-http-looter](https://github.com/chryzsh/sccm-http-looter) | [badsectorlabs/sccm-http-looter](https://github.com/badsectorlabs/sccm-http-looter) | `fix/https-url-regex` (+2) | NTLM authentication support |
+| 2026-08-27 | [go-cmloot](https://github.com/chryzsh/go-cmloot) | [jfjallid/go-cmloot](https://github.com/jfjallid/go-cmloot) | `feat/acl-hunt` (+2) | Add ACL hunting capabilities to find files you should not have access to |
+| 2026-08-20 | [SCCM-CVE-2026-47301-Remote-Code-Execution-Exploit](https://github.com/chryzsh/SCCM-CVE-2026-47301-Remote-Code-Execution-Exploit) | [OmriBaso/SCCM-CVE-2026-47301-Remote-Code-Execution-Exploit](https://github.com/OmriBaso/SCCM-CVE-2026-47301-Remote-Code-Execution-Exploit) | `main` (+1) | Added chunked upload support (--chunk-size) + Build-Cab.ps1 helper |
+| 2026-07-03 | [OperatorsKit](https://github.com/chryzsh/OperatorsKit) | [REDMED-X/OperatorsKit](https://github.com/REDMED-X/OperatorsKit) | `main` (+1) | Added HRESULT diagnostics to AddTaskScheduler for clearer failure output |
+| 2026-07-03 | [cookie-monster](https://github.com/chryzsh/cookie-monster) | [KingOfTheNOPs/cookie-monster](https://github.com/KingOfTheNOPs/cookie-monster) | `main` (+1) | Fixed an ANSI file path declaration and a hex output cast bug |
+| 2026-06-01 | [cloudprowl](https://github.com/chryzsh/cloudprowl) | [pwnedlabs/cloudprowl](https://github.com/pwnedlabs/cloudprowl) | `modular-enumeration` (+3) | Added a modular architecture with token caching, JSON export, and a privilege-escalation analyzer that flags managed-identity takeover paths |
+| 2026-03-30 | [ai-postex](https://github.com/chryzsh/ai-postex) | [0xTriboulet/ai-postex](https://github.com/0xTriboulet/ai-postex) | `main` (+15) | Fixed C++/WinRT build errors and missing Arsenal Kit definitions, plus assorted correctness and performance fixes in the semantic search and credential finder code |
+| 2026-03-20 | [asciinema](https://github.com/chryzsh/asciinema) | [asciinema/asciinema](https://github.com/asciinema/asciinema) | `chryzsh` (+2) | Added a transcript encoder, clip/search commands, and txt-encoder improvements for working with recorded terminal sessions (the castr tooling) |
+| 2026-03-18 | [SharpDPAPI](https://github.com/chryzsh/SharpDPAPI) | [GhostPack/SharpDPAPI](https://github.com/GhostPack/SharpDPAPI) | `chryzsh` (+2) | Strips null bytes from decrypted output strings that were corrupting downstream parsing |
+| 2026-03-18 | [hashcat-6.2.6-SCCM](https://github.com/chryzsh/hashcat-6.2.6-SCCM) | [The-Viper-One/hashcat-6.2.6-SCCM](https://github.com/The-Viper-One/hashcat-6.2.6-SCCM) | `chryzsh` (+3) | Added AES-256 SCCM module (-m 19851) + OpenCL kernel fixes |
+| 2026-03-18 | [cred1py](https://github.com/chryzsh/cred1py) | [SpecterOps/cred1py](https://github.com/SpecterOps/cred1py) | `main` (+21) | Completed end-to-end CRED1 decryption: AES-256 support, policy retrieval plus NAA credential extraction, an SCCM SubjectKeyIdentifier CMS fix, and a local/offline decrypt mode |
+| 2026-03-18 | [PXEThief](https://github.com/chryzsh/PXEThief) | [MWR-CyberSec/PXEThief](https://github.com/MWR-CyberSec/PXEThief) | `main` (+2) | Added Scapy TFTP client, fixed Windows Firewall bypass/cleanup crash |
+| 2026-03-18 | [smbtakeover](https://github.com/chryzsh/smbtakeover) | [zyn3rgy/smbtakeover](https://github.com/zyn3rgy/smbtakeover) | `chryzsh` (+7) | Fixed BOF bugs causing (null) output and handle/memory leaks; added an OC2 Python script for the BOF |
+| 2026-03-18 | [DPAPI_BOF](https://github.com/chryzsh/DPAPI_BOF) | [Bhanunamikaze/DPAPI_BOF](https://github.com/Bhanunamikaze/DPAPI_BOF) | `chryzsh` (+6) | Added SCCM CRED-3 and CRED-4 disk-triage BOFs and a RECON-7 BOF, split out from the base DPAPI BOFs |
+| 2026-03-18 | [PassTheCert](https://github.com/chryzsh/PassTheCert) | [AlmondOffSec/PassTheCert](https://github.com/AlmondOffSec/PassTheCert) | `chryzsh` (+3) | Fixed certificate loading, added private key validation, and improved error messages |
+| 2026-03-18 | [Seatbelt](https://github.com/chryzsh/Seatbelt) | [GhostPack/Seatbelt](https://github.com/GhostPack/Seatbelt) | `chryzsh` (+2) | Fixed remote WMI auth: added PacketPrivacy and corrected implicit credential handling |
+| 2025-04-02 | [SQLRecon](https://github.com/chryzsh/SQLRecon) | [skahwah/SQLRecon](https://github.com/skahwah/SQLRecon) | `dev` (+1) | Sped up CLR assembly load time for the DLL |
+| 2024-11-18 | [linux_bof](https://github.com/chryzsh/linux_bof) | [outflanknl/nix_bof_template](https://github.com/outflanknl/nix_bof_template) | `main` (+4) | Added netstat and uname BOFs, fixed a syscall ID and a type bug in beacon.h |
+| 2022-12-19 | [TIBER-Cases](https://github.com/chryzsh/TIBER-Cases) | [jstnk9/TIBER-Cases](https://github.com/jstnk9/TIBER-Cases) | `main` (+1) | Updated for TheHive5 compatibility |
 
-_Last updated: 2026-09-16 19:20 UTC_
+_Last updated: 2026-09-17 06:53 UTC_

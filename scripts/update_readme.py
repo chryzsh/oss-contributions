@@ -8,6 +8,7 @@ Action's own token.
 See CLAUDE.md for how each section is derived and why the detection
 works the way it does.
 """
+import html
 import json
 import subprocess
 from collections import defaultdict
@@ -48,6 +49,22 @@ EXTENDED_FORK_NOTES: dict[str, str] = {
     "SCCM-CVE-2026-47301-Remote-Code-Execution-Exploit": "Added chunked upload support (--chunk-size) + Build-Cab.ps1 helper",
     "hashcat-6.2.6-SCCM": "Added AES-256 SCCM module (-m 19851) + OpenCL kernel fixes",
     "PXEThief": "Added Scapy TFTP client, fixed Windows Firewall bypass/cleanup crash",
+    "cookie-monster": "Fixed an ANSI file path declaration and a hex output cast bug",
+    "asciinema": "Added a transcript encoder, clip/search commands, and txt-encoder improvements for working with recorded terminal sessions (the castr tooling)",
+    "SharpDPAPI": "Strips null bytes from decrypted output strings that were corrupting downstream parsing",
+    "smbtakeover": "Fixed BOF bugs causing (null) output and handle/memory leaks; added an OC2 Python script for the BOF",
+    "DPAPI_BOF": "Added SCCM CRED-3 and CRED-4 disk-triage BOFs and a RECON-7 BOF, split out from the base DPAPI BOFs",
+    "PassTheCert": "Fixed certificate loading, added private key validation, and improved error messages",
+    "Seatbelt": "Fixed remote WMI auth: added PacketPrivacy and corrected implicit credential handling",
+    "linux_bof": "Added netstat and uname BOFs, fixed a syscall ID and a type bug in beacon.h",
+    "TIBER-Cases": "Updated for TheHive5 compatibility",
+    "RelayInformer": "Added an unauthenticated SMB signing enforcement check, plus NTLM preflight fixes for HTTP relay targets",
+    "ADExplorerSnapshot": "Added dump-output tooling: a single shared pass for object-based dumps, output written beside the snapshot instead of the tool directory, plus a missing header column fix",
+    "cloudprowl": "Added a modular architecture with token caching, JSON export, and a privilege-escalation analyzer that flags managed-identity takeover paths",
+    "ai-postex": "Fixed C++/WinRT build errors and missing Arsenal Kit definitions, plus assorted correctness and performance fixes in the semantic search and credential finder code",
+    "cred1py": "Completed end-to-end CRED1 decryption: AES-256 support, policy retrieval plus NAA credential extraction, an SCCM SubjectKeyIdentifier CMS fix, and a local/offline decrypt mode",
+    "SQLRecon": "Sped up CLR assembly load time for the DLL",
+    "OperatorsKit": "Added HRESULT diagnostics to AddTaskScheduler for clearer failure output",
 }
 
 # Keyword -> category. First match wins, checked against "owner/repo" lowercase.
@@ -153,12 +170,36 @@ def compare(parent: str, base_branch: str, fork_repo: str, branch: str) -> dict 
     ])
 
 
+def is_own_commit(commit_entry: dict) -> bool:
+    """True unless GitHub resolves this commit's author to a real account
+    that isn't GITHUB_USER. A fork can share a branch with its upstream
+    (mirrored at fork time, or synced later) without chryzsh ever having
+    touched it — `cookie-monster`'s "CS-4.12" branch and `asciinema`'s
+    "python" branch both turned out to be 100% the upstream maintainer's own
+    commits, just sitting on a same-named branch in the fork. Raw `ahead_by`
+    can't tell that apart from real work; only the resolved author can.
+
+    An unresolvable author (GitHub's literal "invalid-email-address" login,
+    or no `author` object at all — happens when git was never configured,
+    e.g. author name "Your Name") is treated as GITHUB_USER's own commit:
+    nobody else can push to GITHUB_USER's own fork, so it can't be someone
+    else's authored work even though GitHub can't identify whose."""
+    author = commit_entry.get("author")
+    if not author:
+        return True
+    login = author.get("login")
+    if not login or login == "invalid-email-address":
+        return True
+    return login == GITHUB_USER
+
+
 def find_extended_forks(prd_upstreams: set[str]) -> list[dict]:
-    """A fork counts as 'extended' when some branch has commits the parent's
-    default branch doesn't. Skips any fork whose upstream already has a
-    tracked PR from me (a merged PR still shows the fork as 'ahead' because
-    squash-merge rewrites commit hashes — that work is already represented
-    in the PR table, not here). See CLAUDE.md for the full reasoning."""
+    """A fork counts as 'extended' when some branch has commits, actually
+    authored by GITHUB_USER, that the parent's default branch doesn't. Skips
+    any fork whose upstream already has a tracked PR from me (a merged PR
+    still shows the fork as 'ahead' because squash-merge rewrites commit
+    hashes — that work is already represented in the PR table, not here).
+    See CLAUDE.md for the full reasoning."""
     results = []
     for fork in get_forks():
         name = fork["name"]
@@ -175,11 +216,12 @@ def find_extended_forks(prd_upstreams: set[str]) -> list[dict]:
             cmp = compare(upstream, base_branch, name, branch)
             if not cmp:
                 continue
-            ahead = cmp.get("ahead_by", 0)
+            own_commits = [c for c in cmp.get("commits", []) if is_own_commit(c)]
+            ahead = len(own_commits)
             if ahead > best_ahead:
                 best_branch = branch
                 best_ahead = ahead
-                best_commits = [c["commit"]["message"].splitlines()[0] for c in cmp.get("commits", [])]
+                best_commits = [c["commit"]["message"].splitlines()[0] for c in own_commits]
 
         if best_ahead == 0:
             continue
@@ -202,6 +244,46 @@ def find_extended_forks(prd_upstreams: set[str]) -> list[dict]:
 
     results.sort(key=lambda f: f["date"], reverse=True)
     return results
+
+
+def render_pr_table(prs_in_cat: list[dict]) -> list[str]:
+    """Raw HTML table (not a markdown table) grouped by repo via rowspan, so a
+    repo with many PRs shows its name/link once instead of once per row.
+    Plain markdown tables can't rowspan; GitHub renders embedded HTML in a
+    README fine, so we drop to HTML for just this table. Repos are ordered by
+    their most recent PR (same ordering feel as the old ungrouped, date-sorted
+    table); PRs within a repo are already date-descending from the caller."""
+    groups: dict[str, list[dict]] = {}
+    order: list[str] = []
+    for pr in prs_in_cat:  # already sorted newest-first by the caller
+        repo = pr["repository"]["nameWithOwner"]
+        if repo not in groups:
+            groups[repo] = []
+            order.append(repo)
+        groups[repo].append(pr)
+
+    lines = [
+        "<table>",
+        "<thead><tr><th>Date</th><th>Repo</th><th>PR</th><th>State</th></tr></thead>",
+        "<tbody>",
+    ]
+    for repo in order:
+        rows = groups[repo]
+        repo_link = f'<a href="https://github.com/{html.escape(repo)}">{html.escape(repo)}</a>'
+        for i, pr in enumerate(rows):
+            date = pr["createdAt"][:10]
+            title = html.escape(pr["title"])
+            state = STATE_ICON.get(pr["state"], pr["state"])
+            lines.append("<tr>")
+            lines.append(f"<td>{date}</td>")
+            if i == 0:
+                lines.append(f'<td rowspan="{len(rows)}">{repo_link}</td>')
+            lines.append(f'<td><a href="{pr["url"]}">#{pr["number"]} {title}</a></td>')
+            lines.append(f"<td>{state}</td>")
+            lines.append("</tr>")
+    lines.append("</tbody>")
+    lines.append("</table>")
+    return lines
 
 
 def build_readme(prs: list[dict]) -> str:
@@ -243,14 +325,7 @@ def build_readme(prs: list[dict]) -> str:
             continue
         lines.append(f"## {category} ({len(prs_in_cat)})")
         lines.append("")
-        lines.append("| Date | Repo | PR | State |")
-        lines.append("|------|------|-----|-------|")
-        for pr in prs_in_cat:
-            date = pr["createdAt"][:10]
-            repo = pr["repository"]["nameWithOwner"]
-            title = pr["title"].replace("|", "\\|")
-            state = STATE_ICON.get(pr["state"], pr["state"])
-            lines.append(f"| {date} | {repo} | [#{pr['number']} {title}]({pr['url']}) | {state} |")
+        lines.extend(render_pr_table(prs_in_cat))
         lines.append("")
 
     original_tools = get_original_tools()
@@ -283,8 +358,9 @@ def build_readme(prs: list[dict]) -> str:
         lines.append("| Date | Fork | Upstream | Branch | My changes |")
         lines.append("|------|------|----------|--------|------------|")
         for fork in extended_forks:
+            upstream_link = f"[{fork['upstream']}](https://github.com/{fork['upstream']})"
             lines.append(
-                f"| {fork['date']} | [{fork['name']}]({fork['url']}) | {fork['upstream']} "
+                f"| {fork['date']} | [{fork['name']}]({fork['url']}) | {upstream_link} "
                 f"| `{fork['branch']}` (+{fork['ahead_by']}) | {fork['note']} |"
             )
         lines.append("")
