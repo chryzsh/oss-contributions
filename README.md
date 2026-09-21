@@ -3,7 +3,7 @@
 Pull requests to other people's repos. Excludes PRs to my own repos.
 Regenerated automatically from `gh search prs --author=chryzsh`.
 
-**75 total** across **22 repos** — 32 merged, 32 open, 11 closed.
+**78 total** across **23 repos** — 34 merged, 33 open, 11 closed.
 
 ## SCCM / ConfigMgr (39)
 
@@ -297,32 +297,42 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 </tbody>
 </table>
 
-## AD / BloodHound (8)
+## AD / BloodHound (10)
 
 <table>
 <thead><tr><th>Date</th><th>Repo</th><th>PR</th><th>State</th></tr></thead>
 <tbody>
 <tr>
-<td>2026-09-16</td>
-<td rowspan="1"><a href="https://github.com/SpecterOps/MSSQLHound">SpecterOps/MSSQLHound</a></td>
-<td><a href="https://github.com/SpecterOps/MSSQLHound/pull/27">#27 Fix IP-address targeting bugs in SID/linked-server resolution</a></td>
+<td>2026-09-21</td>
+<td rowspan="5"><a href="https://github.com/SpecterOps/TierZeroTable">SpecterOps/TierZeroTable</a></td>
+<td><a href="https://github.com/SpecterOps/TierZeroTable/pull/17">#17 Add AD FS server and configuration database server as Tier Zero</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-09-21</td>
+<td><a href="https://github.com/SpecterOps/TierZeroTable/pull/16">#16 Add Microsoft Entra Cloud Sync provisioning agent and sync role as Tier Zero</a></td>
 <td>🟢 Open</td>
 </tr>
 <tr>
 <td>2026-09-05</td>
-<td rowspan="3"><a href="https://github.com/SpecterOps/TierZeroTable">SpecterOps/TierZeroTable</a></td>
 <td><a href="https://github.com/SpecterOps/TierZeroTable/pull/15">#15 Add Entra Connect components</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-09-05</td>
 <td><a href="https://github.com/SpecterOps/TierZeroTable/pull/14">#14 Add VMWare vSphere related components</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2025-11-26</td>
 <td><a href="https://github.com/SpecterOps/TierZeroTable/pull/11">#11 Add DHCP administrators</a></td>
 <td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-09-16</td>
+<td rowspan="1"><a href="https://github.com/SpecterOps/MSSQLHound">SpecterOps/MSSQLHound</a></td>
+<td><a href="https://github.com/SpecterOps/MSSQLHound/pull/27">#27 Fix IP-address targeting bugs in SID/linked-server resolution</a></td>
+<td>🟢 Open</td>
 </tr>
 <tr>
 <td>2026-05-26</td>
@@ -405,11 +415,17 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 </tbody>
 </table>
 
-## Other (5)
+## Other (6)
 
 <table>
 <thead><tr><th>Date</th><th>Repo</th><th>PR</th><th>State</th></tr></thead>
 <tbody>
+<tr>
+<td>2026-09-19</td>
+<td rowspan="1"><a href="https://github.com/0xthirteen/rpc2wc">0xthirteen/rpc2wc</a></td>
+<td><a href="https://github.com/0xthirteen/rpc2wc/pull/1">#1 Fix syntax errors in dav-listener.py preventing it from running</a></td>
+<td>🟢 Open</td>
+</tr>
 <tr>
 <td>2026-09-16</td>
 <td rowspan="1"><a href="https://github.com/praetorian-inc/Sulla">praetorian-inc/Sulla</a></td>
@@ -458,12 +474,13 @@ Public repos I wrote from scratch, not forks. Auto-detected (`isFork == false`);
 | [Aggressor-Scripts](https://github.com/chryzsh/Aggressor-Scripts) | Aggressor scripts for Cobalt Strike |
 | [JenkinsPasswordSpray](https://github.com/chryzsh/JenkinsPasswordSpray) | A tool to password spray Jenkins instances |
 
-## Forks extended with own commits (21)
+## Forks extended with own commits (22)
 
 Forks with commits on some branch that aren't in an already-tracked PR above. Auto-detected; see CLAUDE.md for the detection logic and `EXTENDED_FORK_NOTES` to override the one-liner.
 
 | Date | Fork | Upstream | Branch | My changes |
 |------|------|----------|--------|------------|
+| 2026-09-19 | [Coercer](https://github.com/chryzsh/Coercer) | [p0dalirius/Coercer](https://github.com/p0dalirius/Coercer) | `fix/fsrvp-rprn-http-path-double-at` (+1) | Fix double-@ in MS-FSRVP/MS-RPRN http exploit paths |
 | 2026-09-16 | [RelayInformer](https://github.com/chryzsh/RelayInformer) | [zyn3rgy/RelayInformer](https://github.com/zyn3rgy/RelayInformer) | `dev` (+5) | Added an unauthenticated SMB signing enforcement check, plus NTLM preflight fixes for HTTP relay targets |
 | 2026-09-15 | [ADExplorerSnapshot](https://github.com/chryzsh/ADExplorerSnapshot) | [c3c/ADExplorerSnapshot](https://github.com/c3c/ADExplorerSnapshot) | `feature/snapshot-dump-tooling` (+27) | Added dump-output tooling: a single shared pass for object-based dumps, output written beside the snapshot instead of the tool directory, plus a missing header column fix |
 | 2026-08-27 | [sccm-http-looter](https://github.com/chryzsh/sccm-http-looter) | [badsectorlabs/sccm-http-looter](https://github.com/badsectorlabs/sccm-http-looter) | `fix/https-url-regex` (+2) | NTLM authentication support |
@@ -486,4 +503,4 @@ Forks with commits on some branch that aren't in an already-tracked PR above. Au
 | 2024-11-18 | [linux_bof](https://github.com/chryzsh/linux_bof) | [outflanknl/nix_bof_template](https://github.com/outflanknl/nix_bof_template) | `main` (+4) | Added netstat and uname BOFs, fixed a syscall ID and a type bug in beacon.h |
 | 2022-12-19 | [TIBER-Cases](https://github.com/chryzsh/TIBER-Cases) | [jstnk9/TIBER-Cases](https://github.com/jstnk9/TIBER-Cases) | `main` (+1) | Updated for TheHive5 compatibility |
 
-_Last updated: 2026-09-17 06:53 UTC_
+_Last updated: 2026-09-21 11:22 UTC_
