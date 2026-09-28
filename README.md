@@ -3,7 +3,7 @@
 Pull requests to other people's repos. Excludes PRs to my own repos.
 Regenerated automatically from `gh search prs --author=chryzsh`.
 
-**78 total** across **23 repos** — 34 merged, 33 open, 11 closed.
+**78 total** across **23 repos** — 44 merged, 23 open, 11 closed.
 
 ## SCCM / ConfigMgr (39)
 
@@ -81,7 +81,7 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 <td>2026-09-16</td>
 <td rowspan="18"><a href="https://github.com/garrettfoster13/sccmhunter">garrettfoster13/sccmhunter</a></td>
 <td><a href="https://github.com/garrettfoster13/sccmhunter/pull/139">#139 fix: don&#x27;t treat scoped ACEs on System Management as Full Control</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-09-02</td>
@@ -91,22 +91,22 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 <tr>
 <td>2026-09-01</td>
 <td><a href="https://github.com/garrettfoster13/sccmhunter/pull/136">#136 fix: relay attack terminates prematurely and crashes on every attempt</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-09-01</td>
 <td><a href="https://github.com/garrettfoster13/sccmhunter/pull/135">#135 fix: require -t, -tu and -ts for relay attack</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-09-01</td>
 <td><a href="https://github.com/garrettfoster13/sccmhunter/pull/134">#134 fix: add missing return statement in do_decrypt_parsers,</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-09-01</td>
 <td><a href="https://github.com/garrettfoster13/sccmhunter/pull/133">#133 Fix/ldap connection handling</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-08-28</td>
@@ -116,7 +116,7 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 <tr>
 <td>2026-08-28</td>
 <td><a href="https://github.com/garrettfoster13/sccmhunter/pull/131">#131 fix: pass hostname string, not raw Entry, for resolved computer membe…</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-08-28</td>
@@ -131,12 +131,12 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 <tr>
 <td>2026-08-28</td>
 <td><a href="https://github.com/garrettfoster13/sccmhunter/pull/128">#128 fix: remove stray debug print(body) in sessionhunter&#x27;s do_request</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-08-28</td>
 <td><a href="https://github.com/garrettfoster13/sccmhunter/pull/127">#127 fix: decrypt policy on modern SCCM (RSA-OAEP/AES-CBC)</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-05-07</td>
@@ -311,7 +311,7 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 <tr>
 <td>2026-09-21</td>
 <td><a href="https://github.com/SpecterOps/TierZeroTable/pull/16">#16 Add Microsoft Entra Cloud Sync provisioning agent and sync role as Tier Zero</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-09-05</td>
@@ -430,7 +430,7 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 <td>2026-09-16</td>
 <td rowspan="1"><a href="https://github.com/praetorian-inc/Sulla">praetorian-inc/Sulla</a></td>
 <td><a href="https://github.com/praetorian-inc/Sulla/pull/18">#18 Add file creation and last-write timestamps to findings</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2021-05-24</td>
@@ -474,12 +474,13 @@ Public repos I wrote from scratch, not forks. Auto-detected (`isFork == false`);
 | [Aggressor-Scripts](https://github.com/chryzsh/Aggressor-Scripts) | Aggressor scripts for Cobalt Strike |
 | [JenkinsPasswordSpray](https://github.com/chryzsh/JenkinsPasswordSpray) | A tool to password spray Jenkins instances |
 
-## Forks extended with own commits (22)
+## Forks extended with own commits (23)
 
 Forks with commits on some branch that aren't in an already-tracked PR above. Auto-detected; see CLAUDE.md for the detection logic and `EXTENDED_FORK_NOTES` to override the one-liner.
 
 | Date | Fork | Upstream | Branch | My changes |
 |------|------|----------|--------|------------|
+| 2026-09-24 | [SCCMVersionGuesser](https://github.com/chryzsh/SCCMVersionGuesser) | [synacktiv/SCCMVersionGuesser](https://github.com/synacktiv/SCCMVersionGuesser) | `dev` (+3) | Add example output to README; Identify release by build number instead of exact version string; Add SCCM 2603 (build 9146) to version map |
 | 2026-09-19 | [Coercer](https://github.com/chryzsh/Coercer) | [p0dalirius/Coercer](https://github.com/p0dalirius/Coercer) | `fix/fsrvp-rprn-http-path-double-at` (+1) | Fix double-@ in MS-FSRVP/MS-RPRN http exploit paths |
 | 2026-09-16 | [RelayInformer](https://github.com/chryzsh/RelayInformer) | [zyn3rgy/RelayInformer](https://github.com/zyn3rgy/RelayInformer) | `dev` (+5) | Added an unauthenticated SMB signing enforcement check, plus NTLM preflight fixes for HTTP relay targets |
 | 2026-09-15 | [ADExplorerSnapshot](https://github.com/chryzsh/ADExplorerSnapshot) | [c3c/ADExplorerSnapshot](https://github.com/c3c/ADExplorerSnapshot) | `feature/snapshot-dump-tooling` (+27) | Added dump-output tooling: a single shared pass for object-based dumps, output written beside the snapshot instead of the tool directory, plus a missing header column fix |
@@ -503,4 +504,4 @@ Forks with commits on some branch that aren't in an already-tracked PR above. Au
 | 2024-11-18 | [linux_bof](https://github.com/chryzsh/linux_bof) | [outflanknl/nix_bof_template](https://github.com/outflanknl/nix_bof_template) | `main` (+4) | Added netstat and uname BOFs, fixed a syscall ID and a type bug in beacon.h |
 | 2022-12-19 | [TIBER-Cases](https://github.com/chryzsh/TIBER-Cases) | [jstnk9/TIBER-Cases](https://github.com/jstnk9/TIBER-Cases) | `main` (+1) | Updated for TheHive5 compatibility |
 
-_Last updated: 2026-09-21 11:22 UTC_
+_Last updated: 2026-09-28 12:17 UTC_
