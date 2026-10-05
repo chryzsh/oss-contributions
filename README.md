@@ -3,7 +3,7 @@
 Pull requests to other people's repos. Excludes PRs to my own repos.
 Regenerated automatically from `gh search prs --author=chryzsh`.
 
-**78 total** across **23 repos** — 44 merged, 23 open, 11 closed.
+**79 total** across **23 repos** — 50 merged, 16 open, 13 closed.
 
 ## SCCM / ConfigMgr (39)
 
@@ -65,17 +65,17 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 <tr>
 <td>2026-09-08</td>
 <td><a href="https://github.com/SpecterOps/ConfigManBearPig/pull/11">#11 fix(http): stop trusting ambient system/environment proxy config</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-09-08</td>
 <td><a href="https://github.com/SpecterOps/ConfigManBearPig/pull/10">#10 fix(local): gate client-log scrape on the same SCCM-client check as WMI</a></td>
-<td>🟢 Open</td>
+<td>⚪ Closed</td>
 </tr>
 <tr>
 <td>2026-08-31</td>
 <td><a href="https://github.com/SpecterOps/ConfigManBearPig/pull/9">#9 fix(registry): match hostnames case-insensitively against target_hosts_by_hostname</a></td>
-<td>🟢 Open</td>
+<td>⚪ Closed</td>
 </tr>
 <tr>
 <td>2026-09-16</td>
@@ -86,7 +86,7 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 <tr>
 <td>2026-09-02</td>
 <td><a href="https://github.com/garrettfoster13/sccmhunter/pull/137">#137 fix: smb_hunter can crash the entire scan if a single host profiling fails</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-09-01</td>
@@ -187,23 +187,23 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 <tr>
 <td>2026-08-28</td>
 <td><a href="https://github.com/Mayyhem/ludus_sccm/pull/3">#3 Add takeover_9_setup role — deliberate TAKEOVER-9 misconfiguration</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-08-21</td>
 <td><a href="https://github.com/Mayyhem/ludus_sccm/pull/2">#2 Various Ansible fixes and added ESC8</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-08-28</td>
 <td rowspan="3"><a href="https://github.com/Mayyhem/SharpSCCM">Mayyhem/SharpSCCM</a></td>
 <td><a href="https://github.com/Mayyhem/SharpSCCM/pull/65">#65 Use EnumerateDirectories in local triage cache walk</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-08-27</td>
 <td><a href="https://github.com/Mayyhem/SharpSCCM/pull/64">#64 Add get policies command</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-03-23</td>
@@ -213,21 +213,26 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 </tbody>
 </table>
 
-## BOF / C2 tooling (14)
+## BOF / C2 tooling (15)
 
 <table>
 <thead><tr><th>Date</th><th>Repo</th><th>PR</th><th>State</th></tr></thead>
 <tbody>
 <tr>
-<td>2026-03-20</td>
-<td rowspan="1"><a href="https://github.com/brmkit/toastnotify-bof">brmkit/toastnotify-bof</a></td>
-<td><a href="https://github.com/brmkit/toastnotify-bof/pull/1">#1 OC2 compatibility fixes + CNA/OC2 scripts</a></td>
-<td>🟣 Merged</td>
+<td>2026-09-30</td>
+<td rowspan="2"><a href="https://github.com/coffeegist/bofhound">coffeegist/bofhound</a></td>
+<td><a href="https://github.com/coffeegist/bofhound/pull/64">#64 Feature/upload preflight check</a></td>
+<td>🟢 Open</td>
 </tr>
 <tr>
 <td>2026-03-08</td>
-<td rowspan="1"><a href="https://github.com/coffeegist/bofhound">coffeegist/bofhound</a></td>
 <td><a href="https://github.com/coffeegist/bofhound/pull/56">#56 Fix TrustDirection/TrustType enum crash with newer bloodhound.py</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-03-20</td>
+<td rowspan="1"><a href="https://github.com/brmkit/toastnotify-bof">brmkit/toastnotify-bof</a></td>
+<td><a href="https://github.com/brmkit/toastnotify-bof/pull/1">#1 OC2 compatibility fixes + CNA/OC2 scripts</a></td>
 <td>🟣 Merged</td>
 </tr>
 <tr>
@@ -474,12 +479,13 @@ Public repos I wrote from scratch, not forks. Auto-detected (`isFork == false`);
 | [Aggressor-Scripts](https://github.com/chryzsh/Aggressor-Scripts) | Aggressor scripts for Cobalt Strike |
 | [JenkinsPasswordSpray](https://github.com/chryzsh/JenkinsPasswordSpray) | A tool to password spray Jenkins instances |
 
-## Forks extended with own commits (23)
+## Forks extended with own commits (24)
 
 Forks with commits on some branch that aren't in an already-tracked PR above. Auto-detected; see CLAUDE.md for the detection logic and `EXTENDED_FORK_NOTES` to override the one-liner.
 
 | Date | Fork | Upstream | Branch | My changes |
 |------|------|----------|--------|------------|
+| 2026-10-01 | [KrbRelayBof](https://github.com/chryzsh/KrbRelayBof) | [antroguy/KrbRelayBof](https://github.com/antroguy/KrbRelayBof) | `fix/jump-table-crash` (+3) | Pass stack variable for lpThreadId instead of NULL; Add PR draft for jump table crash fix; Eliminate .rdata jump tables that crash non-CS COFF loaders |
 | 2026-09-24 | [SCCMVersionGuesser](https://github.com/chryzsh/SCCMVersionGuesser) | [synacktiv/SCCMVersionGuesser](https://github.com/synacktiv/SCCMVersionGuesser) | `dev` (+3) | Add example output to README; Identify release by build number instead of exact version string; Add SCCM 2603 (build 9146) to version map |
 | 2026-09-19 | [Coercer](https://github.com/chryzsh/Coercer) | [p0dalirius/Coercer](https://github.com/p0dalirius/Coercer) | `fix/fsrvp-rprn-http-path-double-at` (+1) | Fix double-@ in MS-FSRVP/MS-RPRN http exploit paths |
 | 2026-09-16 | [RelayInformer](https://github.com/chryzsh/RelayInformer) | [zyn3rgy/RelayInformer](https://github.com/zyn3rgy/RelayInformer) | `dev` (+5) | Added an unauthenticated SMB signing enforcement check, plus NTLM preflight fixes for HTTP relay targets |
@@ -504,4 +510,4 @@ Forks with commits on some branch that aren't in an already-tracked PR above. Au
 | 2024-11-18 | [linux_bof](https://github.com/chryzsh/linux_bof) | [outflanknl/nix_bof_template](https://github.com/outflanknl/nix_bof_template) | `main` (+4) | Added netstat and uname BOFs, fixed a syscall ID and a type bug in beacon.h |
 | 2022-12-19 | [TIBER-Cases](https://github.com/chryzsh/TIBER-Cases) | [jstnk9/TIBER-Cases](https://github.com/jstnk9/TIBER-Cases) | `main` (+1) | Updated for TheHive5 compatibility |
 
-_Last updated: 2026-09-28 12:17 UTC_
+_Last updated: 2026-10-05 12:57 UTC_
