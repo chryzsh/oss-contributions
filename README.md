@@ -3,7 +3,7 @@
 Pull requests to other people's repos. Excludes PRs to my own repos.
 Regenerated automatically from `gh search prs --author=chryzsh`.
 
-**79 total** across **23 repos** — 50 merged, 16 open, 13 closed.
+**79 total** across **23 repos** — 53 merged, 13 open, 13 closed.
 
 ## SCCM / ConfigMgr (39)
 
@@ -55,12 +55,12 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 <td>2026-09-16</td>
 <td rowspan="5"><a href="https://github.com/SpecterOps/ConfigManBearPig">SpecterOps/ConfigManBearPig</a></td>
 <td><a href="https://github.com/SpecterOps/ConfigManBearPig/pull/14">#14 fix: only count ACEs that actually grant Full Control on System Manag…</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-09-08</td>
 <td><a href="https://github.com/SpecterOps/ConfigManBearPig/pull/12">#12 fix(context): normalize SPN/objectClass to a list before dlt persistence</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-09-08</td>
@@ -311,7 +311,7 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 <td>2026-09-21</td>
 <td rowspan="5"><a href="https://github.com/SpecterOps/TierZeroTable">SpecterOps/TierZeroTable</a></td>
 <td><a href="https://github.com/SpecterOps/TierZeroTable/pull/17">#17 Add AD FS server and configuration database server as Tier Zero</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-09-21</td>
@@ -463,14 +463,16 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 </tbody>
 </table>
 
-## Original tools (9)
+## Original tools (11)
 
 Public repos I wrote from scratch, not forks. Auto-detected (`isFork == false`); curate exclusions via `EXCLUDE_ORIGINAL_TOOLS`.
 
 | Tool | Description |
 |------|-------------|
-| [docker-cobaltstrike](https://github.com/chryzsh/docker-cobaltstrike) | — |
+| [redteam-bofs](https://github.com/chryzsh/redteam-bofs) | Test development repository for various Beacon Object Files (BOFs) |
+| [claude-skills](https://github.com/chryzsh/claude-skills) | Custom Claude Code skills for offensive security development |
 | [PXEHacker](https://github.com/chryzsh/PXEHacker) | — |
+| [docker-cobaltstrike](https://github.com/chryzsh/docker-cobaltstrike) | — |
 | [dataverse-recon](https://github.com/chryzsh/dataverse-recon) | — |
 | [docker-sliver](https://github.com/chryzsh/docker-sliver) | — |
 | [purpleteam](https://github.com/chryzsh/purpleteam) | Files used in purple team testing |
@@ -485,7 +487,7 @@ Forks with commits on some branch that aren't in an already-tracked PR above. Au
 
 | Date | Fork | Upstream | Branch | My changes |
 |------|------|----------|--------|------------|
-| 2026-10-01 | [KrbRelayBof](https://github.com/chryzsh/KrbRelayBof) | [antroguy/KrbRelayBof](https://github.com/antroguy/KrbRelayBof) | `fix/jump-table-crash` (+3) | Pass stack variable for lpThreadId instead of NULL; Add PR draft for jump table crash fix; Eliminate .rdata jump tables that crash non-CS COFF loaders |
+| 2026-10-06 | [KrbRelayBof](https://github.com/chryzsh/KrbRelayBof) | [AgeloVito/KrbRelayBof](https://github.com/AgeloVito/KrbRelayBof) | `exp/negotiate` (+14) | Fix CNA relay_host disambiguation and add FORK_NOTES; Accept an optional relay_host in the CNA for direct rportfwd; Add Negotiate (type 9) variant alongside the Kerberos (type 16) BOF |
 | 2026-09-24 | [SCCMVersionGuesser](https://github.com/chryzsh/SCCMVersionGuesser) | [synacktiv/SCCMVersionGuesser](https://github.com/synacktiv/SCCMVersionGuesser) | `dev` (+3) | Add example output to README; Identify release by build number instead of exact version string; Add SCCM 2603 (build 9146) to version map |
 | 2026-09-19 | [Coercer](https://github.com/chryzsh/Coercer) | [p0dalirius/Coercer](https://github.com/p0dalirius/Coercer) | `fix/fsrvp-rprn-http-path-double-at` (+1) | Fix double-@ in MS-FSRVP/MS-RPRN http exploit paths |
 | 2026-09-16 | [RelayInformer](https://github.com/chryzsh/RelayInformer) | [zyn3rgy/RelayInformer](https://github.com/zyn3rgy/RelayInformer) | `dev` (+5) | Added an unauthenticated SMB signing enforcement check, plus NTLM preflight fixes for HTTP relay targets |
@@ -510,4 +512,4 @@ Forks with commits on some branch that aren't in an already-tracked PR above. Au
 | 2024-11-18 | [linux_bof](https://github.com/chryzsh/linux_bof) | [outflanknl/nix_bof_template](https://github.com/outflanknl/nix_bof_template) | `main` (+4) | Added netstat and uname BOFs, fixed a syscall ID and a type bug in beacon.h |
 | 2022-12-19 | [TIBER-Cases](https://github.com/chryzsh/TIBER-Cases) | [jstnk9/TIBER-Cases](https://github.com/jstnk9/TIBER-Cases) | `main` (+1) | Updated for TheHive5 compatibility |
 
-_Last updated: 2026-10-05 12:57 UTC_
+_Last updated: 2026-10-09 08:22 UTC_
