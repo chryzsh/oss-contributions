@@ -463,13 +463,14 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 </tbody>
 </table>
 
-## Original tools (11)
+## Original tools (12)
 
 Public repos I wrote from scratch, not forks. Auto-detected (`isFork == false`); curate exclusions via `EXCLUDE_ORIGINAL_TOOLS`.
 
 | Tool | Description |
 |------|-------------|
-| [redteam-bofs](https://github.com/chryzsh/redteam-bofs) | Test development repository for various Beacon Object Files (BOFs) |
+| [bigpotam](https://github.com/chryzsh/bigpotam) | — |
+| [redteam-bofs](https://github.com/chryzsh/redteam-bofs) | Repository for various Beacon Object Files (BOFs) |
 | [claude-skills](https://github.com/chryzsh/claude-skills) | Custom Claude Code skills for offensive security development |
 | [PXEHacker](https://github.com/chryzsh/PXEHacker) | — |
 | [docker-cobaltstrike](https://github.com/chryzsh/docker-cobaltstrike) | — |
@@ -512,4 +513,4 @@ Forks with commits on some branch that aren't in an already-tracked PR above. Au
 | 2024-11-18 | [linux_bof](https://github.com/chryzsh/linux_bof) | [outflanknl/nix_bof_template](https://github.com/outflanknl/nix_bof_template) | `main` (+4) | Added netstat and uname BOFs, fixed a syscall ID and a type bug in beacon.h |
 | 2022-12-19 | [TIBER-Cases](https://github.com/chryzsh/TIBER-Cases) | [jstnk9/TIBER-Cases](https://github.com/jstnk9/TIBER-Cases) | `main` (+1) | Updated for TheHive5 compatibility |
 
-_Last updated: 2026-10-09 08:22 UTC_
+_Last updated: 2026-10-12 13:49 UTC_
