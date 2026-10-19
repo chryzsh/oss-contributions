@@ -469,10 +469,10 @@ Public repos I wrote from scratch, not forks. Auto-detected (`isFork == false`);
 
 | Tool | Description |
 |------|-------------|
-| [bigpotam](https://github.com/chryzsh/bigpotam) | — |
-| [redteam-bofs](https://github.com/chryzsh/redteam-bofs) | Repository for various Beacon Object Files (BOFs) |
 | [claude-skills](https://github.com/chryzsh/claude-skills) | Custom Claude Code skills for offensive security development |
+| [redteam-bofs](https://github.com/chryzsh/redteam-bofs) | Repository for various Beacon Object Files (BOFs) |
 | [PXEHacker](https://github.com/chryzsh/PXEHacker) | — |
+| [bigpotam](https://github.com/chryzsh/bigpotam) | — |
 | [docker-cobaltstrike](https://github.com/chryzsh/docker-cobaltstrike) | — |
 | [dataverse-recon](https://github.com/chryzsh/dataverse-recon) | — |
 | [docker-sliver](https://github.com/chryzsh/docker-sliver) | — |
@@ -482,16 +482,17 @@ Public repos I wrote from scratch, not forks. Auto-detected (`isFork == false`);
 | [Aggressor-Scripts](https://github.com/chryzsh/Aggressor-Scripts) | Aggressor scripts for Cobalt Strike |
 | [JenkinsPasswordSpray](https://github.com/chryzsh/JenkinsPasswordSpray) | A tool to password spray Jenkins instances |
 
-## Forks extended with own commits (24)
+## Forks extended with own commits (25)
 
 Forks with commits on some branch that aren't in an already-tracked PR above. Auto-detected; see CLAUDE.md for the detection logic and `EXTENDED_FORK_NOTES` to override the one-liner.
 
 | Date | Fork | Upstream | Branch | My changes |
 |------|------|----------|--------|------------|
+| 2026-10-15 | [RelayInformer](https://github.com/chryzsh/RelayInformer) | [zyn3rgy/RelayInformer](https://github.com/zyn3rgy/RelayInformer) | `feature/multi-target` (+16) | Added an unauthenticated SMB signing enforcement check, plus NTLM preflight fixes for HTTP relay targets |
+| 2026-10-15 | [MFASweep](https://github.com/chryzsh/MFASweep) | [dafthack/MFASweep](https://github.com/dafthack/MFASweep) | `fix/null-matches-and-empty-urlpost` (+1) | Fix null array and empty urlPost errors in web portal checks |
+| 2026-10-13 | [SCCMVersionGuesser](https://github.com/chryzsh/SCCMVersionGuesser) | [synacktiv/SCCMVersionGuesser](https://github.com/synacktiv/SCCMVersionGuesser) | `dev` (+7) | Merge non-destructive single-CVE patch checker; Merge 2303 KB29166583 client version fix; Fix 2303 KB29166583 client version in BUILD_MAP |
 | 2026-10-06 | [KrbRelayBof](https://github.com/chryzsh/KrbRelayBof) | [AgeloVito/KrbRelayBof](https://github.com/AgeloVito/KrbRelayBof) | `exp/negotiate` (+14) | Fix CNA relay_host disambiguation and add FORK_NOTES; Accept an optional relay_host in the CNA for direct rportfwd; Add Negotiate (type 9) variant alongside the Kerberos (type 16) BOF |
-| 2026-09-24 | [SCCMVersionGuesser](https://github.com/chryzsh/SCCMVersionGuesser) | [synacktiv/SCCMVersionGuesser](https://github.com/synacktiv/SCCMVersionGuesser) | `dev` (+3) | Add example output to README; Identify release by build number instead of exact version string; Add SCCM 2603 (build 9146) to version map |
 | 2026-09-19 | [Coercer](https://github.com/chryzsh/Coercer) | [p0dalirius/Coercer](https://github.com/p0dalirius/Coercer) | `fix/fsrvp-rprn-http-path-double-at` (+1) | Fix double-@ in MS-FSRVP/MS-RPRN http exploit paths |
-| 2026-09-16 | [RelayInformer](https://github.com/chryzsh/RelayInformer) | [zyn3rgy/RelayInformer](https://github.com/zyn3rgy/RelayInformer) | `dev` (+5) | Added an unauthenticated SMB signing enforcement check, plus NTLM preflight fixes for HTTP relay targets |
 | 2026-09-15 | [ADExplorerSnapshot](https://github.com/chryzsh/ADExplorerSnapshot) | [c3c/ADExplorerSnapshot](https://github.com/c3c/ADExplorerSnapshot) | `feature/snapshot-dump-tooling` (+27) | Added dump-output tooling: a single shared pass for object-based dumps, output written beside the snapshot instead of the tool directory, plus a missing header column fix |
 | 2026-08-27 | [sccm-http-looter](https://github.com/chryzsh/sccm-http-looter) | [badsectorlabs/sccm-http-looter](https://github.com/badsectorlabs/sccm-http-looter) | `fix/https-url-regex` (+2) | NTLM authentication support |
 | 2026-08-27 | [go-cmloot](https://github.com/chryzsh/go-cmloot) | [jfjallid/go-cmloot](https://github.com/jfjallid/go-cmloot) | `feat/acl-hunt` (+2) | Add ACL hunting capabilities to find files you should not have access to |
@@ -513,4 +514,4 @@ Forks with commits on some branch that aren't in an already-tracked PR above. Au
 | 2024-11-18 | [linux_bof](https://github.com/chryzsh/linux_bof) | [outflanknl/nix_bof_template](https://github.com/outflanknl/nix_bof_template) | `main` (+4) | Added netstat and uname BOFs, fixed a syscall ID and a type bug in beacon.h |
 | 2022-12-19 | [TIBER-Cases](https://github.com/chryzsh/TIBER-Cases) | [jstnk9/TIBER-Cases](https://github.com/jstnk9/TIBER-Cases) | `main` (+1) | Updated for TheHive5 compatibility |
 
-_Last updated: 2026-10-12 13:49 UTC_
+_Last updated: 2026-10-19 11:30 UTC_
