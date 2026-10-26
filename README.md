@@ -3,83 +3,26 @@
 Pull requests to other people's repos. Excludes PRs to my own repos.
 Regenerated automatically from `gh search prs --author=chryzsh`.
 
-**79 total** across **23 repos** — 53 merged, 13 open, 13 closed.
+**82 total** across **24 repos** — 55 merged, 14 open, 13 closed.
 
-## SCCM / ConfigMgr (39)
+## SCCM / ConfigMgr (41)
 
 <table>
 <thead><tr><th>Date</th><th>Repo</th><th>PR</th><th>State</th></tr></thead>
 <tbody>
 <tr>
-<td>2026-09-16</td>
-<td rowspan="8"><a href="https://github.com/subat0mik/Misconfiguration-Manager">subat0mik/Misconfiguration-Manager</a></td>
-<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/60">#60 Link ELEVATE-2 and PREVENT-14 as associated offensive/defensive IDs</a></td>
-<td>🟣 Merged</td>
-</tr>
-<tr>
-<td>2026-08-28</td>
-<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/59">#59 Add SCCMHunter implementation to ELEVATE-2</a></td>
+<td>2026-10-22</td>
+<td rowspan="20"><a href="https://github.com/garrettfoster13/sccmhunter">garrettfoster13/sccmhunter</a></td>
+<td><a href="https://github.com/garrettfoster13/sccmhunter/pull/144">#144 fix: cache AdminService Kerberos TGS instead of reauthenticating ever…</a></td>
 <td>🟢 Open</td>
 </tr>
 <tr>
-<td>2026-08-28</td>
-<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/58">#58 Document task sequence credential variables beyond the NAA in CRED-1..4</a></td>
-<td>🟢 Open</td>
-</tr>
-<tr>
-<td>2026-08-28</td>
-<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/57">#57 Flesh out TAKEOVER-9 with a full description</a></td>
-<td>🟣 Merged</td>
-</tr>
-<tr>
-<td>2026-08-28</td>
-<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/56">#56 Adding CRED-9 - deobfuscation of credentials stored in SCCM machine variables</a></td>
-<td>🟢 Open</td>
-</tr>
-<tr>
-<td>2026-08-28</td>
-<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/55">#55 Resync attack/defense matrix with technique write-ups</a></td>
-<td>🟢 Open</td>
-</tr>
-<tr>
-<td>2026-08-28</td>
-<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/54">#54 Restructure RESOURCES.md into categorized tables</a></td>
-<td>🟣 Merged</td>
-</tr>
-<tr>
-<td>2026-03-22</td>
-<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/51">#51 Expand CRED-6 to cover credential exposure on other site server shares</a></td>
+<td>2026-10-20</td>
+<td><a href="https://github.com/garrettfoster13/sccmhunter/pull/143">#143 Add Kerberos channel binding for AdminService and MP HTTPS auth</a></td>
 <td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-09-16</td>
-<td rowspan="5"><a href="https://github.com/SpecterOps/ConfigManBearPig">SpecterOps/ConfigManBearPig</a></td>
-<td><a href="https://github.com/SpecterOps/ConfigManBearPig/pull/14">#14 fix: only count ACEs that actually grant Full Control on System Manag…</a></td>
-<td>🟣 Merged</td>
-</tr>
-<tr>
-<td>2026-09-08</td>
-<td><a href="https://github.com/SpecterOps/ConfigManBearPig/pull/12">#12 fix(context): normalize SPN/objectClass to a list before dlt persistence</a></td>
-<td>🟣 Merged</td>
-</tr>
-<tr>
-<td>2026-09-08</td>
-<td><a href="https://github.com/SpecterOps/ConfigManBearPig/pull/11">#11 fix(http): stop trusting ambient system/environment proxy config</a></td>
-<td>🟣 Merged</td>
-</tr>
-<tr>
-<td>2026-09-08</td>
-<td><a href="https://github.com/SpecterOps/ConfigManBearPig/pull/10">#10 fix(local): gate client-log scrape on the same SCCM-client check as WMI</a></td>
-<td>⚪ Closed</td>
-</tr>
-<tr>
-<td>2026-08-31</td>
-<td><a href="https://github.com/SpecterOps/ConfigManBearPig/pull/9">#9 fix(registry): match hostnames case-insensitively against target_hosts_by_hostname</a></td>
-<td>⚪ Closed</td>
-</tr>
-<tr>
-<td>2026-09-16</td>
-<td rowspan="18"><a href="https://github.com/garrettfoster13/sccmhunter">garrettfoster13/sccmhunter</a></td>
 <td><a href="https://github.com/garrettfoster13/sccmhunter/pull/139">#139 fix: don&#x27;t treat scoped ACEs on System Management as Full Control</a></td>
 <td>🟣 Merged</td>
 </tr>
@@ -169,6 +112,73 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 <td>🟣 Merged</td>
 </tr>
 <tr>
+<td>2026-09-16</td>
+<td rowspan="8"><a href="https://github.com/subat0mik/Misconfiguration-Manager">subat0mik/Misconfiguration-Manager</a></td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/60">#60 Link ELEVATE-2 and PREVENT-14 as associated offensive/defensive IDs</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/59">#59 Add SCCMHunter implementation to ELEVATE-2</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/58">#58 Document task sequence credential variables beyond the NAA in CRED-1..4</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/57">#57 Flesh out TAKEOVER-9 with a full description</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/56">#56 Adding CRED-9 - deobfuscation of credentials stored in SCCM machine variables</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/55">#55 Resync attack/defense matrix with technique write-ups</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/54">#54 Restructure RESOURCES.md into categorized tables</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-03-22</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/51">#51 Expand CRED-6 to cover credential exposure on other site server shares</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-09-16</td>
+<td rowspan="5"><a href="https://github.com/SpecterOps/ConfigManBearPig">SpecterOps/ConfigManBearPig</a></td>
+<td><a href="https://github.com/SpecterOps/ConfigManBearPig/pull/14">#14 fix: only count ACEs that actually grant Full Control on System Manag…</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-09-08</td>
+<td><a href="https://github.com/SpecterOps/ConfigManBearPig/pull/12">#12 fix(context): normalize SPN/objectClass to a list before dlt persistence</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-09-08</td>
+<td><a href="https://github.com/SpecterOps/ConfigManBearPig/pull/11">#11 fix(http): stop trusting ambient system/environment proxy config</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-09-08</td>
+<td><a href="https://github.com/SpecterOps/ConfigManBearPig/pull/10">#10 fix(local): gate client-log scrape on the same SCCM-client check as WMI</a></td>
+<td>⚪ Closed</td>
+</tr>
+<tr>
+<td>2026-08-31</td>
+<td><a href="https://github.com/SpecterOps/ConfigManBearPig/pull/9">#9 fix(registry): match hostnames case-insensitively against target_hosts_by_hostname</a></td>
+<td>⚪ Closed</td>
+</tr>
+<tr>
 <td>2026-09-08</td>
 <td rowspan="5"><a href="https://github.com/Mayyhem/ludus_sccm">Mayyhem/ludus_sccm</a></td>
 <td><a href="https://github.com/Mayyhem/ludus_sccm/pull/6">#6 Add opt-in Script Approvers RBAC for NAA (EXEC-2 lab path)</a></td>
@@ -213,16 +223,22 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 </tbody>
 </table>
 
-## BOF / C2 tooling (15)
+## BOF / C2 tooling (16)
 
 <table>
 <thead><tr><th>Date</th><th>Repo</th><th>PR</th><th>State</th></tr></thead>
 <tbody>
 <tr>
+<td>2026-10-22</td>
+<td rowspan="1"><a href="https://github.com/sudonoodle/BOF-entra-authcode-flow">sudonoodle/BOF-entra-authcode-flow</a></td>
+<td><a href="https://github.com/sudonoodle/BOF-entra-authcode-flow/pull/3">#3 Fix OC2 script: pack string arguments as narrow strings (STR)</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
 <td>2026-09-30</td>
 <td rowspan="2"><a href="https://github.com/coffeegist/bofhound">coffeegist/bofhound</a></td>
 <td><a href="https://github.com/coffeegist/bofhound/pull/64">#64 Feature/upload preflight check</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-03-08</td>
@@ -463,16 +479,17 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 </tbody>
 </table>
 
-## Original tools (12)
+## Original tools (13)
 
 Public repos I wrote from scratch, not forks. Auto-detected (`isFork == false`); curate exclusions via `EXCLUDE_ORIGINAL_TOOLS`.
 
 | Tool | Description |
 |------|-------------|
-| [claude-skills](https://github.com/chryzsh/claude-skills) | Custom Claude Code skills for offensive security development |
-| [redteam-bofs](https://github.com/chryzsh/redteam-bofs) | Repository for various Beacon Object Files (BOFs) |
-| [PXEHacker](https://github.com/chryzsh/PXEHacker) | — |
 | [bigpotam](https://github.com/chryzsh/bigpotam) | — |
+| [company-portal-lpe](https://github.com/chryzsh/company-portal-lpe) | — |
+| [redteam-bofs](https://github.com/chryzsh/redteam-bofs) | Repository for various Beacon Object Files (BOFs) |
+| [claude-skills](https://github.com/chryzsh/claude-skills) | Custom Claude Code skills for offensive security development |
+| [PXEHacker](https://github.com/chryzsh/PXEHacker) | — |
 | [docker-cobaltstrike](https://github.com/chryzsh/docker-cobaltstrike) | — |
 | [dataverse-recon](https://github.com/chryzsh/dataverse-recon) | — |
 | [docker-sliver](https://github.com/chryzsh/docker-sliver) | — |
@@ -482,12 +499,17 @@ Public repos I wrote from scratch, not forks. Auto-detected (`isFork == false`);
 | [Aggressor-Scripts](https://github.com/chryzsh/Aggressor-Scripts) | Aggressor scripts for Cobalt Strike |
 | [JenkinsPasswordSpray](https://github.com/chryzsh/JenkinsPasswordSpray) | A tool to password spray Jenkins instances |
 
-## Forks extended with own commits (25)
+## Forks extended with own commits (30)
 
 Forks with commits on some branch that aren't in an already-tracked PR above. Auto-detected; see CLAUDE.md for the detection logic and `EXTENDED_FORK_NOTES` to override the one-liner.
 
 | Date | Fork | Upstream | Branch | My changes |
 |------|------|----------|--------|------------|
+| 2026-10-26 | [CAPSlock](https://github.com/chryzsh/CAPSlock) | [rbnroot/CAPSlock](https://github.com/rbnroot/CAPSlock) | `fix/nested-group-membership` (+20) | Add Expand All / Collapse All button to All Policies page; Add None option to user risk dropdowns and permutation list; Add exclude groups feature for simulating on-prem group removal |
+| 2026-10-26 | [ROADtools](https://github.com/chryzsh/ROADtools) | [dirkjanm/ROADtools](https://github.com/dirkjanm/ROADtools) | `perf/gui-queries` (+5) | Prefetch nested groups for the azroleassignments endpoints; Only load the columns that list endpoints return; Eager load owners and members on list endpoints |
+| 2026-10-23 | [entra-ca-insight](https://github.com/chryzsh/entra-ca-insight) | [emiliensocchi/entra-ca-insight](https://github.com/emiliensocchi/entra-ca-insight) | `feature/roadrecon-backend` (+4) | docs: document roadrecon mode and add fork notes; feat: add --roadrecon-db flag for offline analysis; fix: let offline clients supply PIM data and tenant details |
+| 2026-10-22 | [entraconnectdump-bof](https://github.com/chryzsh/entraconnectdump-bof) | [Jamjim01/entraconnectdump-bof](https://github.com/Jamjim01/entraconnectdump-bof) | `fix/localdb-connection-string` (+3) | Add named pipe connection support for LocalDB; Fix LocalDB connection string format; Replace toWideChar with KERNEL32$MultiByteToWideChar |
+| 2026-10-20 | [CMvarDecrypt](https://github.com/chryzsh/CMvarDecrypt) | [1njected/CMvarDecrypt](https://github.com/1njected/CMvarDecrypt) | `feature/aes256-support` (+1) | Read cipher algorithm from header and add Python port |
 | 2026-10-15 | [RelayInformer](https://github.com/chryzsh/RelayInformer) | [zyn3rgy/RelayInformer](https://github.com/zyn3rgy/RelayInformer) | `feature/multi-target` (+16) | Added an unauthenticated SMB signing enforcement check, plus NTLM preflight fixes for HTTP relay targets |
 | 2026-10-15 | [MFASweep](https://github.com/chryzsh/MFASweep) | [dafthack/MFASweep](https://github.com/dafthack/MFASweep) | `fix/null-matches-and-empty-urlpost` (+1) | Fix null array and empty urlPost errors in web portal checks |
 | 2026-10-13 | [SCCMVersionGuesser](https://github.com/chryzsh/SCCMVersionGuesser) | [synacktiv/SCCMVersionGuesser](https://github.com/synacktiv/SCCMVersionGuesser) | `dev` (+7) | Merge non-destructive single-CVE patch checker; Merge 2303 KB29166583 client version fix; Fix 2303 KB29166583 client version in BUILD_MAP |
@@ -514,4 +536,4 @@ Forks with commits on some branch that aren't in an already-tracked PR above. Au
 | 2024-11-18 | [linux_bof](https://github.com/chryzsh/linux_bof) | [outflanknl/nix_bof_template](https://github.com/outflanknl/nix_bof_template) | `main` (+4) | Added netstat and uname BOFs, fixed a syscall ID and a type bug in beacon.h |
 | 2022-12-19 | [TIBER-Cases](https://github.com/chryzsh/TIBER-Cases) | [jstnk9/TIBER-Cases](https://github.com/jstnk9/TIBER-Cases) | `main` (+1) | Updated for TheHive5 compatibility |
 
-_Last updated: 2026-10-19 11:30 UTC_
+_Last updated: 2026-10-26 11:49 UTC_
