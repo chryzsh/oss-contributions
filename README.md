@@ -505,8 +505,8 @@ Forks with commits on some branch that aren't in an already-tracked PR above. Au
 
 | Date | Fork | Upstream | Branch | My changes |
 |------|------|----------|--------|------------|
-| 2026-10-26 | [CAPSlock](https://github.com/chryzsh/CAPSlock) | [rbnroot/CAPSlock](https://github.com/rbnroot/CAPSlock) | `fix/nested-group-membership` (+20) | Add Expand All / Collapse All button to All Policies page; Add None option to user risk dropdowns and permutation list; Add exclude groups feature for simulating on-prem group removal |
-| 2026-10-26 | [ROADtools](https://github.com/chryzsh/ROADtools) | [dirkjanm/ROADtools](https://github.com/dirkjanm/ROADtools) | `perf/gui-queries` (+5) | Prefetch nested groups for the azroleassignments endpoints; Only load the columns that list endpoints return; Eager load owners and members on list endpoints |
+| 2026-11-02 | [CAPSlock](https://github.com/chryzsh/CAPSlock) | [rbnroot/CAPSlock](https://github.com/rbnroot/CAPSlock) | `feat/cli-named-location` (+25) | Read trust category from KnownNetworkPolicies entries; Add --location to what-if and analyze; Do not treat the trusted flag as a named location match |
+| 2026-10-30 | [ROADtools](https://github.com/chryzsh/ROADtools) | [dirkjanm/ROADtools](https://github.com/dirkjanm/ROADtools) | `dev` (+7) | Merge branch 'fix/known-network-locations' into dev; Show every known network in named location listings; Prefetch nested groups for the azroleassignments endpoints |
 | 2026-10-23 | [entra-ca-insight](https://github.com/chryzsh/entra-ca-insight) | [emiliensocchi/entra-ca-insight](https://github.com/emiliensocchi/entra-ca-insight) | `feature/roadrecon-backend` (+4) | docs: document roadrecon mode and add fork notes; feat: add --roadrecon-db flag for offline analysis; fix: let offline clients supply PIM data and tenant details |
 | 2026-10-22 | [entraconnectdump-bof](https://github.com/chryzsh/entraconnectdump-bof) | [Jamjim01/entraconnectdump-bof](https://github.com/Jamjim01/entraconnectdump-bof) | `fix/localdb-connection-string` (+3) | Add named pipe connection support for LocalDB; Fix LocalDB connection string format; Replace toWideChar with KERNEL32$MultiByteToWideChar |
 | 2026-10-20 | [CMvarDecrypt](https://github.com/chryzsh/CMvarDecrypt) | [1njected/CMvarDecrypt](https://github.com/1njected/CMvarDecrypt) | `feature/aes256-support` (+1) | Read cipher algorithm from header and add Python port |
@@ -536,4 +536,4 @@ Forks with commits on some branch that aren't in an already-tracked PR above. Au
 | 2024-11-18 | [linux_bof](https://github.com/chryzsh/linux_bof) | [outflanknl/nix_bof_template](https://github.com/outflanknl/nix_bof_template) | `main` (+4) | Added netstat and uname BOFs, fixed a syscall ID and a type bug in beacon.h |
 | 2022-12-19 | [TIBER-Cases](https://github.com/chryzsh/TIBER-Cases) | [jstnk9/TIBER-Cases](https://github.com/jstnk9/TIBER-Cases) | `main` (+1) | Updated for TheHive5 compatibility |
 
-_Last updated: 2026-10-26 11:49 UTC_
+_Last updated: 2026-11-02 14:08 UTC_
