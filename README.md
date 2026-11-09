@@ -3,13 +3,64 @@
 Pull requests to other people's repos. Excludes PRs to my own repos.
 Regenerated automatically from `gh search prs --author=chryzsh`.
 
-**82 total** across **24 repos** — 55 merged, 14 open, 13 closed.
+**86 total** across **25 repos** — 55 merged, 18 open, 13 closed.
 
-## SCCM / ConfigMgr (41)
+## SCCM / ConfigMgr (43)
 
 <table>
 <thead><tr><th>Date</th><th>Repo</th><th>PR</th><th>State</th></tr></thead>
 <tbody>
+<tr>
+<td>2026-11-03</td>
+<td rowspan="10"><a href="https://github.com/subat0mik/Misconfiguration-Manager">subat0mik/Misconfiguration-Manager</a></td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/62">#62 Add boot media variables.dat example to CRED-6</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-11-03</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/61">#61 Add PREVENT-24 and extend DETECT-7 for CRED-6</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-09-16</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/60">#60 Link ELEVATE-2 and PREVENT-14 as associated offensive/defensive IDs</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/59">#59 Add SCCMHunter implementation to ELEVATE-2</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/58">#58 Document task sequence credential variables beyond the NAA in CRED-1..4</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/57">#57 Flesh out TAKEOVER-9 with a full description</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/56">#56 Adding CRED-9 - deobfuscation of credentials stored in SCCM machine variables</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/55">#55 Resync attack/defense matrix with technique write-ups</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/54">#54 Restructure RESOURCES.md into categorized tables</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-03-22</td>
+<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/51">#51 Expand CRED-6 to cover credential exposure on other site server shares</a></td>
+<td>🟣 Merged</td>
+</tr>
 <tr>
 <td>2026-10-22</td>
 <td rowspan="20"><a href="https://github.com/garrettfoster13/sccmhunter">garrettfoster13/sccmhunter</a></td>
@@ -109,47 +160,6 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 <tr>
 <td>2026-03-08</td>
 <td><a href="https://github.com/garrettfoster13/sccmhunter/pull/108">#108 fix: make add_admin use SMS00UNA instead of SMS00ALL when adding users to admin</a></td>
-<td>🟣 Merged</td>
-</tr>
-<tr>
-<td>2026-09-16</td>
-<td rowspan="8"><a href="https://github.com/subat0mik/Misconfiguration-Manager">subat0mik/Misconfiguration-Manager</a></td>
-<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/60">#60 Link ELEVATE-2 and PREVENT-14 as associated offensive/defensive IDs</a></td>
-<td>🟣 Merged</td>
-</tr>
-<tr>
-<td>2026-08-28</td>
-<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/59">#59 Add SCCMHunter implementation to ELEVATE-2</a></td>
-<td>🟢 Open</td>
-</tr>
-<tr>
-<td>2026-08-28</td>
-<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/58">#58 Document task sequence credential variables beyond the NAA in CRED-1..4</a></td>
-<td>🟢 Open</td>
-</tr>
-<tr>
-<td>2026-08-28</td>
-<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/57">#57 Flesh out TAKEOVER-9 with a full description</a></td>
-<td>🟣 Merged</td>
-</tr>
-<tr>
-<td>2026-08-28</td>
-<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/56">#56 Adding CRED-9 - deobfuscation of credentials stored in SCCM machine variables</a></td>
-<td>🟢 Open</td>
-</tr>
-<tr>
-<td>2026-08-28</td>
-<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/55">#55 Resync attack/defense matrix with technique write-ups</a></td>
-<td>🟢 Open</td>
-</tr>
-<tr>
-<td>2026-08-28</td>
-<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/54">#54 Restructure RESOURCES.md into categorized tables</a></td>
-<td>🟣 Merged</td>
-</tr>
-<tr>
-<td>2026-03-22</td>
-<td><a href="https://github.com/subat0mik/Misconfiguration-Manager/pull/51">#51 Expand CRED-6 to cover credential exposure on other site server shares</a></td>
 <td>🟣 Merged</td>
 </tr>
 <tr>
@@ -436,11 +446,22 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 </tbody>
 </table>
 
-## Other (6)
+## Other (8)
 
 <table>
 <thead><tr><th>Date</th><th>Repo</th><th>PR</th><th>State</th></tr></thead>
 <tbody>
+<tr>
+<td>2026-11-08</td>
+<td rowspan="2"><a href="https://github.com/amosblomqvist/learnharness">amosblomqvist/learnharness</a></td>
+<td><a href="https://github.com/amosblomqvist/learnharness/pull/598">#598 fix(ui): show links in quiz options as plain text</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-11-06</td>
+<td><a href="https://github.com/amosblomqvist/learnharness/pull/570">#570 fix(ui): wrap wide tables</a></td>
+<td>🟢 Open</td>
+</tr>
 <tr>
 <td>2026-09-19</td>
 <td rowspan="1"><a href="https://github.com/0xthirteen/rpc2wc">0xthirteen/rpc2wc</a></td>
@@ -486,9 +507,9 @@ Public repos I wrote from scratch, not forks. Auto-detected (`isFork == false`);
 | Tool | Description |
 |------|-------------|
 | [bigpotam](https://github.com/chryzsh/bigpotam) | — |
+| [claude-skills](https://github.com/chryzsh/claude-skills) | Custom Claude Code skills for offensive security development |
 | [company-portal-lpe](https://github.com/chryzsh/company-portal-lpe) | — |
 | [redteam-bofs](https://github.com/chryzsh/redteam-bofs) | Repository for various Beacon Object Files (BOFs) |
-| [claude-skills](https://github.com/chryzsh/claude-skills) | Custom Claude Code skills for offensive security development |
 | [PXEHacker](https://github.com/chryzsh/PXEHacker) | — |
 | [docker-cobaltstrike](https://github.com/chryzsh/docker-cobaltstrike) | — |
 | [dataverse-recon](https://github.com/chryzsh/dataverse-recon) | — |
@@ -499,13 +520,14 @@ Public repos I wrote from scratch, not forks. Auto-detected (`isFork == false`);
 | [Aggressor-Scripts](https://github.com/chryzsh/Aggressor-Scripts) | Aggressor scripts for Cobalt Strike |
 | [JenkinsPasswordSpray](https://github.com/chryzsh/JenkinsPasswordSpray) | A tool to password spray Jenkins instances |
 
-## Forks extended with own commits (30)
+## Forks extended with own commits (31)
 
 Forks with commits on some branch that aren't in an already-tracked PR above. Auto-detected; see CLAUDE.md for the detection logic and `EXTENDED_FORK_NOTES` to override the one-liner.
 
 | Date | Fork | Upstream | Branch | My changes |
 |------|------|----------|--------|------------|
-| 2026-11-02 | [CAPSlock](https://github.com/chryzsh/CAPSlock) | [rbnroot/CAPSlock](https://github.com/rbnroot/CAPSlock) | `feat/cli-named-location` (+25) | Read trust category from KnownNetworkPolicies entries; Add --location to what-if and analyze; Do not treat the trusted flag as a named location match |
+| 2026-11-03 | [CAPSlock](https://github.com/chryzsh/CAPSlock) | [rbnroot/CAPSlock](https://github.com/rbnroot/CAPSlock) | `dev` (+42) | Show client app types by Graph name in the web GUI policy summary; Merge branch 'fix/client-app-type-mapping' into dev; Document the client app type mapping in the readme |
+| 2026-11-03 | [CopyUnlocker-BOF](https://github.com/chryzsh/CopyUnlocker-BOF) | [strozfriedberg/CopyUnlocker-BOF](https://github.com/strozfriedberg/CopyUnlocker-BOF) | `feature/recursive-dir-copy` (+3) | Report the CopyFileA error and only search handles for locked files; Add FORK_NOTES.md; Add copyunlocker-dir to copy a directory tree with locked files |
 | 2026-10-30 | [ROADtools](https://github.com/chryzsh/ROADtools) | [dirkjanm/ROADtools](https://github.com/dirkjanm/ROADtools) | `dev` (+7) | Merge branch 'fix/known-network-locations' into dev; Show every known network in named location listings; Prefetch nested groups for the azroleassignments endpoints |
 | 2026-10-23 | [entra-ca-insight](https://github.com/chryzsh/entra-ca-insight) | [emiliensocchi/entra-ca-insight](https://github.com/emiliensocchi/entra-ca-insight) | `feature/roadrecon-backend` (+4) | docs: document roadrecon mode and add fork notes; feat: add --roadrecon-db flag for offline analysis; fix: let offline clients supply PIM data and tenant details |
 | 2026-10-22 | [entraconnectdump-bof](https://github.com/chryzsh/entraconnectdump-bof) | [Jamjim01/entraconnectdump-bof](https://github.com/Jamjim01/entraconnectdump-bof) | `fix/localdb-connection-string` (+3) | Add named pipe connection support for LocalDB; Fix LocalDB connection string format; Replace toWideChar with KERNEL32$MultiByteToWideChar |
@@ -536,4 +558,4 @@ Forks with commits on some branch that aren't in an already-tracked PR above. Au
 | 2024-11-18 | [linux_bof](https://github.com/chryzsh/linux_bof) | [outflanknl/nix_bof_template](https://github.com/outflanknl/nix_bof_template) | `main` (+4) | Added netstat and uname BOFs, fixed a syscall ID and a type bug in beacon.h |
 | 2022-12-19 | [TIBER-Cases](https://github.com/chryzsh/TIBER-Cases) | [jstnk9/TIBER-Cases](https://github.com/jstnk9/TIBER-Cases) | `main` (+1) | Updated for TheHive5 compatibility |
 
-_Last updated: 2026-11-02 14:08 UTC_
+_Last updated: 2026-11-09 14:39 UTC_
