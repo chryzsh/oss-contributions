@@ -3,7 +3,7 @@
 Pull requests to other people's repos. Excludes PRs to my own repos.
 Regenerated automatically from `gh search prs --author=chryzsh`.
 
-**86 total** across **25 repos** — 55 merged, 18 open, 13 closed.
+**118 total** across **28 repos** — 66 merged, 32 open, 20 closed.
 
 ## SCCM / ConfigMgr (43)
 
@@ -265,7 +265,7 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 <td>2026-02-26</td>
 <td rowspan="1"><a href="https://github.com/outflanknl/C2-Tool-Collection">outflanknl/C2-Tool-Collection</a></td>
 <td><a href="https://github.com/outflanknl/C2-Tool-Collection/pull/6">#6 Fix Kerberoast BOF crash on wildcard filters and output truncation</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-02-10</td>
@@ -446,20 +446,183 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 </tbody>
 </table>
 
-## Other (8)
+## Other (40)
 
 <table>
 <thead><tr><th>Date</th><th>Repo</th><th>PR</th><th>State</th></tr></thead>
 <tbody>
 <tr>
+<td>2026-11-15</td>
+<td rowspan="3"><a href="https://github.com/amosblomqvist/learnharness">amosblomqvist/learnharness</a></td>
+<td><a href="https://github.com/amosblomqvist/learnharness/pull/755">#755 Fix error overlay on every page reload in dev</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
 <td>2026-11-08</td>
-<td rowspan="2"><a href="https://github.com/amosblomqvist/learnharness">amosblomqvist/learnharness</a></td>
 <td><a href="https://github.com/amosblomqvist/learnharness/pull/598">#598 fix(ui): show links in quiz options as plain text</a></td>
 <td>🟢 Open</td>
 </tr>
 <tr>
 <td>2026-11-06</td>
 <td><a href="https://github.com/amosblomqvist/learnharness/pull/570">#570 fix(ui): wrap wide tables</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-11-14</td>
+<td rowspan="10"><a href="https://github.com/zyn3rgy/RelayInformer">zyn3rgy/RelayInformer</a></td>
+<td><a href="https://github.com/zyn3rgy/RelayInformer/pull/14">#14 Multiple bugs related to the MSSQL BOF</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-11-13</td>
+<td><a href="https://github.com/zyn3rgy/RelayInformer/pull/13">#13 Accept multiple targets for SMB and MSSQL</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-11-13</td>
+<td><a href="https://github.com/zyn3rgy/RelayInformer/pull/12">#12 Add unauthenticated SMB signing check</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-11-13</td>
+<td><a href="https://github.com/zyn3rgy/RelayInformer/pull/11">#11 Stop with an error when an EPA step gets no real answer</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-11-12</td>
+<td><a href="https://github.com/zyn3rgy/RelayInformer/pull/10">#10 Use --nthash for LDAP and LDAPS binds</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-11-12</td>
+<td><a href="https://github.com/zyn3rgy/RelayInformer/pull/9">#9 Fix/ldap result handling</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-11-11</td>
+<td><a href="https://github.com/zyn3rgy/RelayInformer/pull/8">#8 Fix http connection timeouts</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-11-11</td>
+<td><a href="https://github.com/zyn3rgy/RelayInformer/pull/7">#7 Added proper None check for blank password</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-11-11</td>
+<td><a href="https://github.com/zyn3rgy/RelayInformer/pull/6">#6 Increased precision in removing the trailing dot from dc hostnames</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-11-10</td>
+<td><a href="https://github.com/zyn3rgy/RelayInformer/pull/5">#5 Fix mssql --user help: domain is required</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-11-12</td>
+<td rowspan="16"><a href="https://github.com/MnkyArts/ProjectAvalanche">MnkyArts/ProjectAvalanche</a></td>
+<td><a href="https://github.com/MnkyArts/ProjectAvalanche/pull/59">#59 Show medal ghosts only in ghost events</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-11-11</td>
+<td><a href="https://github.com/MnkyArts/ProjectAvalanche/pull/45">#45 Offer a wingsuit when the drop requires one</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-11-11</td>
+<td><a href="https://github.com/MnkyArts/ProjectAvalanche/pull/44">#44 Show the medal targets with the riders&#x27; round icons</a></td>
+<td>⚪ Closed</td>
+</tr>
+<tr>
+<td>2026-11-11</td>
+<td><a href="https://github.com/MnkyArts/ProjectAvalanche/pull/43">#43 Let hidden clips&#x27; children advance under noInvisibleAdvance</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-11-11</td>
+<td><a href="https://github.com/MnkyArts/ProjectAvalanche/pull/42">#42 Play the globe&#x27;s sounds</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-11-11</td>
+<td><a href="https://github.com/MnkyArts/ProjectAvalanche/pull/41">#41 Place only the track&#x27;s and the drop&#x27;s own objects and terrain</a></td>
+<td>⚪ Closed</td>
+</tr>
+<tr>
+<td>2026-11-11</td>
+<td><a href="https://github.com/MnkyArts/ProjectAvalanche/pull/40">#40 Raise the update unpack limits and name the one exceede</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-11-11</td>
+<td><a href="https://github.com/MnkyArts/ProjectAvalanche/pull/39">#39 Show the score gap in trick events&#x27; split callouts</a></td>
+<td>⚪ Closed</td>
+</tr>
+<tr>
+<td>2026-11-11</td>
+<td><a href="https://github.com/MnkyArts/ProjectAvalanche/pull/38">#38 Keep the rider&#x27;s speed when the wingsuit closes right after opening</a></td>
+<td>⚪ Closed</td>
+</tr>
+<tr>
+<td>2026-11-11</td>
+<td><a href="https://github.com/MnkyArts/ProjectAvalanche/pull/37">#37 Clear the HUD leaderboard when a new drop starts</a></td>
+<td>⚪ Closed</td>
+</tr>
+<tr>
+<td>2026-11-11</td>
+<td><a href="https://github.com/MnkyArts/ProjectAvalanche/pull/33">#33 Explain the launcher&#x27;s options</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-11-11</td>
+<td><a href="https://github.com/MnkyArts/ProjectAvalanche/pull/32">#32 Hide medal ghost labels in races against bots</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-11-10</td>
+<td><a href="https://github.com/MnkyArts/ProjectAvalanche/pull/23">#23 Offer suits at every rider level</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-11-10</td>
+<td><a href="https://github.com/MnkyArts/ProjectAvalanche/pull/20">#20 Keep the avalanche and ambient sounds after a restart</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-11-10</td>
+<td><a href="https://github.com/MnkyArts/ProjectAvalanche/pull/19">#19 Write each level&#x27;s course elevations to the HUD</a></td>
+<td>⚪ Closed</td>
+</tr>
+<tr>
+<td>2026-11-10</td>
+<td><a href="https://github.com/MnkyArts/ProjectAvalanche/pull/18">#18 End a landing bail after a time limit on the ground</a></td>
+<td>⚪ Closed</td>
+</tr>
+<tr>
+<td>2026-11-10</td>
+<td rowspan="5"><a href="https://github.com/rbnroot/CAPSlock">rbnroot/CAPSlock</a></td>
+<td><a href="https://github.com/rbnroot/CAPSlock/pull/14">#14 Web GUI improvements</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-11-10</td>
+<td><a href="https://github.com/rbnroot/CAPSlock/pull/13">#13 Guest users, report-only policies and session controls</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-11-10</td>
+<td><a href="https://github.com/rbnroot/CAPSlock/pull/12">#12 List policies that target a service principal</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-11-10</td>
+<td><a href="https://github.com/rbnroot/CAPSlock/pull/11">#11 Fix named location matching and add --location</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-11-10</td>
+<td><a href="https://github.com/rbnroot/CAPSlock/pull/10">#10 Resolve nested group and group-based role membership</a></td>
 <td>🟢 Open</td>
 </tr>
 <tr>
@@ -506,8 +669,8 @@ Public repos I wrote from scratch, not forks. Auto-detected (`isFork == false`);
 
 | Tool | Description |
 |------|-------------|
-| [bigpotam](https://github.com/chryzsh/bigpotam) | — |
 | [claude-skills](https://github.com/chryzsh/claude-skills) | Custom Claude Code skills for offensive security development |
+| [bigpotam](https://github.com/chryzsh/bigpotam) | — |
 | [company-portal-lpe](https://github.com/chryzsh/company-portal-lpe) | — |
 | [redteam-bofs](https://github.com/chryzsh/redteam-bofs) | Repository for various Beacon Object Files (BOFs) |
 | [PXEHacker](https://github.com/chryzsh/PXEHacker) | — |
@@ -520,19 +683,17 @@ Public repos I wrote from scratch, not forks. Auto-detected (`isFork == false`);
 | [Aggressor-Scripts](https://github.com/chryzsh/Aggressor-Scripts) | Aggressor scripts for Cobalt Strike |
 | [JenkinsPasswordSpray](https://github.com/chryzsh/JenkinsPasswordSpray) | A tool to password spray Jenkins instances |
 
-## Forks extended with own commits (31)
+## Forks extended with own commits (29)
 
 Forks with commits on some branch that aren't in an already-tracked PR above. Auto-detected; see CLAUDE.md for the detection logic and `EXTENDED_FORK_NOTES` to override the one-liner.
 
 | Date | Fork | Upstream | Branch | My changes |
 |------|------|----------|--------|------------|
-| 2026-11-03 | [CAPSlock](https://github.com/chryzsh/CAPSlock) | [rbnroot/CAPSlock](https://github.com/rbnroot/CAPSlock) | `dev` (+42) | Show client app types by Graph name in the web GUI policy summary; Merge branch 'fix/client-app-type-mapping' into dev; Document the client app type mapping in the readme |
 | 2026-11-03 | [CopyUnlocker-BOF](https://github.com/chryzsh/CopyUnlocker-BOF) | [strozfriedberg/CopyUnlocker-BOF](https://github.com/strozfriedberg/CopyUnlocker-BOF) | `feature/recursive-dir-copy` (+3) | Report the CopyFileA error and only search handles for locked files; Add FORK_NOTES.md; Add copyunlocker-dir to copy a directory tree with locked files |
 | 2026-10-30 | [ROADtools](https://github.com/chryzsh/ROADtools) | [dirkjanm/ROADtools](https://github.com/dirkjanm/ROADtools) | `dev` (+7) | Merge branch 'fix/known-network-locations' into dev; Show every known network in named location listings; Prefetch nested groups for the azroleassignments endpoints |
 | 2026-10-23 | [entra-ca-insight](https://github.com/chryzsh/entra-ca-insight) | [emiliensocchi/entra-ca-insight](https://github.com/emiliensocchi/entra-ca-insight) | `feature/roadrecon-backend` (+4) | docs: document roadrecon mode and add fork notes; feat: add --roadrecon-db flag for offline analysis; fix: let offline clients supply PIM data and tenant details |
 | 2026-10-22 | [entraconnectdump-bof](https://github.com/chryzsh/entraconnectdump-bof) | [Jamjim01/entraconnectdump-bof](https://github.com/Jamjim01/entraconnectdump-bof) | `fix/localdb-connection-string` (+3) | Add named pipe connection support for LocalDB; Fix LocalDB connection string format; Replace toWideChar with KERNEL32$MultiByteToWideChar |
 | 2026-10-20 | [CMvarDecrypt](https://github.com/chryzsh/CMvarDecrypt) | [1njected/CMvarDecrypt](https://github.com/1njected/CMvarDecrypt) | `feature/aes256-support` (+1) | Read cipher algorithm from header and add Python port |
-| 2026-10-15 | [RelayInformer](https://github.com/chryzsh/RelayInformer) | [zyn3rgy/RelayInformer](https://github.com/zyn3rgy/RelayInformer) | `feature/multi-target` (+16) | Added an unauthenticated SMB signing enforcement check, plus NTLM preflight fixes for HTTP relay targets |
 | 2026-10-15 | [MFASweep](https://github.com/chryzsh/MFASweep) | [dafthack/MFASweep](https://github.com/dafthack/MFASweep) | `fix/null-matches-and-empty-urlpost` (+1) | Fix null array and empty urlPost errors in web portal checks |
 | 2026-10-13 | [SCCMVersionGuesser](https://github.com/chryzsh/SCCMVersionGuesser) | [synacktiv/SCCMVersionGuesser](https://github.com/synacktiv/SCCMVersionGuesser) | `dev` (+7) | Merge non-destructive single-CVE patch checker; Merge 2303 KB29166583 client version fix; Fix 2303 KB29166583 client version in BUILD_MAP |
 | 2026-10-06 | [KrbRelayBof](https://github.com/chryzsh/KrbRelayBof) | [AgeloVito/KrbRelayBof](https://github.com/AgeloVito/KrbRelayBof) | `exp/negotiate` (+14) | Fix CNA relay_host disambiguation and add FORK_NOTES; Accept an optional relay_host in the CNA for direct rportfwd; Add Negotiate (type 9) variant alongside the Kerberos (type 16) BOF |
@@ -558,4 +719,4 @@ Forks with commits on some branch that aren't in an already-tracked PR above. Au
 | 2024-11-18 | [linux_bof](https://github.com/chryzsh/linux_bof) | [outflanknl/nix_bof_template](https://github.com/outflanknl/nix_bof_template) | `main` (+4) | Added netstat and uname BOFs, fixed a syscall ID and a type bug in beacon.h |
 | 2022-12-19 | [TIBER-Cases](https://github.com/chryzsh/TIBER-Cases) | [jstnk9/TIBER-Cases](https://github.com/jstnk9/TIBER-Cases) | `main` (+1) | Updated for TheHive5 compatibility |
 
-_Last updated: 2026-11-09 14:39 UTC_
+_Last updated: 2026-11-16 14:15 UTC_
