@@ -3,7 +3,7 @@
 Pull requests to other people's repos. Excludes PRs to my own repos.
 Regenerated automatically from `gh search prs --author=chryzsh`.
 
-**118 total** across **28 repos** — 66 merged, 32 open, 20 closed.
+**121 total** across **29 repos** — 68 merged, 33 open, 20 closed.
 
 ## SCCM / ConfigMgr (43)
 
@@ -446,14 +446,24 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 </tbody>
 </table>
 
-## Other (40)
+## Other (43)
 
 <table>
 <thead><tr><th>Date</th><th>Repo</th><th>PR</th><th>State</th></tr></thead>
 <tbody>
 <tr>
+<td>2026-11-23</td>
+<td rowspan="5"><a href="https://github.com/amosblomqvist/learnharness">amosblomqvist/learnharness</a></td>
+<td><a href="https://github.com/amosblomqvist/learnharness/pull/910">#910 Show the teacher&#x27;s explanations with the Claude Code CLI connection</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
+<td>2026-11-23</td>
+<td><a href="https://github.com/amosblomqvist/learnharness/pull/909">#909 Wrap long inline code inside the quiz card</a></td>
+<td>🟢 Open</td>
+</tr>
+<tr>
 <td>2026-11-15</td>
-<td rowspan="3"><a href="https://github.com/amosblomqvist/learnharness">amosblomqvist/learnharness</a></td>
 <td><a href="https://github.com/amosblomqvist/learnharness/pull/755">#755 Fix error overlay on every page reload in dev</a></td>
 <td>🟢 Open</td>
 </tr>
@@ -465,6 +475,12 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 <tr>
 <td>2026-11-06</td>
 <td><a href="https://github.com/amosblomqvist/learnharness/pull/570">#570 fix(ui): wrap wide tables</a></td>
+<td>🟣 Merged</td>
+</tr>
+<tr>
+<td>2026-11-18</td>
+<td rowspan="1"><a href="https://github.com/dirkjanm/ROADtools">dirkjanm/ROADtools</a></td>
+<td><a href="https://github.com/dirkjanm/ROADtools/pull/162">#162 roadtx: read refreshtokento token from --tokenfile</a></td>
 <td>🟣 Merged</td>
 </tr>
 <tr>
@@ -623,7 +639,7 @@ Regenerated automatically from `gh search prs --author=chryzsh`.
 <tr>
 <td>2026-11-10</td>
 <td><a href="https://github.com/rbnroot/CAPSlock/pull/10">#10 Resolve nested group and group-based role membership</a></td>
-<td>🟢 Open</td>
+<td>🟣 Merged</td>
 </tr>
 <tr>
 <td>2026-09-19</td>
@@ -683,14 +699,13 @@ Public repos I wrote from scratch, not forks. Auto-detected (`isFork == false`);
 | [Aggressor-Scripts](https://github.com/chryzsh/Aggressor-Scripts) | Aggressor scripts for Cobalt Strike |
 | [JenkinsPasswordSpray](https://github.com/chryzsh/JenkinsPasswordSpray) | A tool to password spray Jenkins instances |
 
-## Forks extended with own commits (29)
+## Forks extended with own commits (28)
 
 Forks with commits on some branch that aren't in an already-tracked PR above. Auto-detected; see CLAUDE.md for the detection logic and `EXTENDED_FORK_NOTES` to override the one-liner.
 
 | Date | Fork | Upstream | Branch | My changes |
 |------|------|----------|--------|------------|
 | 2026-11-03 | [CopyUnlocker-BOF](https://github.com/chryzsh/CopyUnlocker-BOF) | [strozfriedberg/CopyUnlocker-BOF](https://github.com/strozfriedberg/CopyUnlocker-BOF) | `feature/recursive-dir-copy` (+3) | Report the CopyFileA error and only search handles for locked files; Add FORK_NOTES.md; Add copyunlocker-dir to copy a directory tree with locked files |
-| 2026-10-30 | [ROADtools](https://github.com/chryzsh/ROADtools) | [dirkjanm/ROADtools](https://github.com/dirkjanm/ROADtools) | `dev` (+7) | Merge branch 'fix/known-network-locations' into dev; Show every known network in named location listings; Prefetch nested groups for the azroleassignments endpoints |
 | 2026-10-23 | [entra-ca-insight](https://github.com/chryzsh/entra-ca-insight) | [emiliensocchi/entra-ca-insight](https://github.com/emiliensocchi/entra-ca-insight) | `feature/roadrecon-backend` (+4) | docs: document roadrecon mode and add fork notes; feat: add --roadrecon-db flag for offline analysis; fix: let offline clients supply PIM data and tenant details |
 | 2026-10-22 | [entraconnectdump-bof](https://github.com/chryzsh/entraconnectdump-bof) | [Jamjim01/entraconnectdump-bof](https://github.com/Jamjim01/entraconnectdump-bof) | `fix/localdb-connection-string` (+3) | Add named pipe connection support for LocalDB; Fix LocalDB connection string format; Replace toWideChar with KERNEL32$MultiByteToWideChar |
 | 2026-10-20 | [CMvarDecrypt](https://github.com/chryzsh/CMvarDecrypt) | [1njected/CMvarDecrypt](https://github.com/1njected/CMvarDecrypt) | `feature/aes256-support` (+1) | Read cipher algorithm from header and add Python port |
@@ -719,4 +734,4 @@ Forks with commits on some branch that aren't in an already-tracked PR above. Au
 | 2024-11-18 | [linux_bof](https://github.com/chryzsh/linux_bof) | [outflanknl/nix_bof_template](https://github.com/outflanknl/nix_bof_template) | `main` (+4) | Added netstat and uname BOFs, fixed a syscall ID and a type bug in beacon.h |
 | 2022-12-19 | [TIBER-Cases](https://github.com/chryzsh/TIBER-Cases) | [jstnk9/TIBER-Cases](https://github.com/jstnk9/TIBER-Cases) | `main` (+1) | Updated for TheHive5 compatibility |
 
-_Last updated: 2026-11-16 14:15 UTC_
+_Last updated: 2026-11-23 16:46 UTC_
